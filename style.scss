@@ -14,8 +14,14 @@ html {
   max-width: 900px;
 }
 
-.bandeau {
-  position: fixed;
+header {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+nav {
+  position: relative;
+  overflow: hidden;
   background: linear-gradient(
     -45deg,
     rgba(0, 0, 255, 0.493),
@@ -24,14 +30,33 @@ html {
   display: flexbox;
   align-items: center;
   justify-content: space-around;
-  width: 100%;
   color: white;
+  width: 100%;
   font-size: 1.3em;
   font-weight: 700;
 }
 
+.img_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
 .banniere {
-  background: black;
   height: auto;
   overflow: hidden;
   color: white;
@@ -65,12 +90,47 @@ article {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 5px;
 
   p {
     padding-top: 1.5em;
     text-align: justify;
     width: 80%;
   }
+}
+
+.roadmap {
+  padding: 80px;
+  margin-top: 50px;
+  border-radius: 25px;
+}
+
+.table {
+  background: papayawhip;
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+caption {
+  padding: 10px;
+  caption-side: top;
+  font-size: 22px;
+  font-weight: 700;
+  font-style: italic;
+  color: darkblue;
+  text-decoration: underline;
+  border: 2px solid dodgerblue;
+  border-bottom: initial;
+}
+
+td,
+th {
+  border: 1px dashed blue;
+  border-top: initial;
+}
+
+tr {
+  border: 2px solid dodgerblue;
 }
 
 aside {
@@ -86,4 +146,10 @@ h2 {
 .jumbotron {
   display: flex;
   background: linear-gradient(-45deg, #0000ff, rgba(255, 255, 255, 0.876));
+}
+
+footer {
+  height: 320px;
+  color: whitesmoke;
+  background-image: linear-gradient(60deg, dodgerblue, navy);
 }
