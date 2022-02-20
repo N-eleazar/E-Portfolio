@@ -23,6 +23,14 @@ nav {
   background: linear-gradient(-45deg, rgba(0, 0, 255, 0.493), rgba(255, 255, 255, 0.876));
 }
 
+.bandeau {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 section {
   background: wheat;
   display: -webkit-box;
