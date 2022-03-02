@@ -98,9 +98,9 @@
                     </tr>
                     <tr>
                       <td class="table-primary" colspan="2">Créer un site web avec HTML,CSS et le Frameword Bootstrap.</td>
-                      <td class="table-info"colspan="2">S'initier à la programmation avec Javascript.</td>
-                      <td class="table-primary"colspan="2">Dynmiser vos sites web avec Javascript.</td>
-                      <td class="table-info"colspan="2">Utiliser Git et Github pour gérer son code source.</td>
+                      <td class="table-info" colspan="2">S'initier à la programmation avec Javascript.</td>
+                      <td class="table-primary" colspan="2">Dynmiser vos sites web avec Javascript.</td>
+                      <td class="table-info" colspan="2">Utiliser Git et Github pour gérer son code source.</td>
                       <td class="table-primary" colspan="2">Réaliser la maquette d'une application web responsive.</td>
                       <td class="table-info" colspan="2">Créer un site web avec le CMS Wordpress.</td>
                       <td class="table-primary" colspan="2">Développer une applicaiton web avec React.js</td>  
