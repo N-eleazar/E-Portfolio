@@ -1,126 +1,106 @@
-<!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <title>Mon PortFolio</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+<?php   include 'include/header.html';  ?>
 
-    <div class="container-fluid">
-
-      <header>
-        <div class="row">
-          <div class="bandeau">
-            <div class="col-4">
-              <div class="logo">
-                <img 
-                  src="/images/zozor_logo.png" 
-                  alt="Logo+Title">
-              </div>
-            </div>    <!-- col bandeau -->
-
-            <nav class="col-xl-8 col-6">
-              <div class="navbar navbar-expand-xl navbar-dark">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#">Menu</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarScroll">
-                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.php">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="roadmap.php">RoadMap</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="evolution.php">Evolution</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </nav>    <!-- col nav -->
-          </div>      <!-- bandeau -->
-        </div>        <!-- raw -->
-      </header>
-      <section>
+  <section class="section_head">    
     <article>
       <div class="row">
         <div class="col">
-          <h2 id="services">MES SERVICES</h2>
-          <div class="service">
-            <aside class="row">
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-              porttitor hendrerit nibh non ultricies. Phasellus eu condimentum
-              odio. Proin in magna vel dui semper elementum. Donec pulvinar nibh
-              vel nisl varius vehicula. Sed efficitur, augue vel consectetur
-              sollicitudin, ipsum dui interdum justo, vitae porta arcu diam ut
-              leo. Morbi lorem massa, sollicitudin quis nunc id, vestibulum
-              tincidunt mauris. Curabitur quis nisl sit amet nisi bibendum porta
-              sit amet scelerisque elit.
-              <br />
-              Maecenas elementum mauris vitae arcu mollis, sed interdum erat
-              porttitor. Aliquam sit amet urna interdum arcu interdum dictum vitae
-              sit amet purus. Mauris aliquam mauris ante, nec faucibus lectus
-              tempus vitae. Nunc nisi est, scelerisque non accumsan vel, tristique
-              quis turpis. In non sem rutrum, luctus nisi vel, efficitur arcu.
-              Pellentesque et sem risus. Nulla erat orci, luctus et scelerisque
-              id, elementum vel lectus. Donec eleifend molestie egestas. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit.
-              <br />
-              </p>
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-              porttitor hendrerit nibh non ultricies. Phasellus eu condimentum
-              odio. Proin in magna vel dui semper elementum. Donec pulvinar nibh
-              vel nisl varius vehicula. Sed efficitur, augue vel consectetur
-              sollicitudin, ipsum dui interdum justo, vitae porta arcu diam ut
-              leo. Morbi lorem massa, sollicitudin quis nunc id, vestibulum
-              tincidunt mauris. Curabitur quis nisl sit amet nisi bibendum porta
-              sit amet scelerisque elit.
-              <br />
-              Maecenas elementum mauris vitae arcu mollis, sed interdum erat
-              porttitor. Aliquam sit amet urna interdum arcu interdum dictum vitae
-              sit amet purus. Mauris aliquam mauris ante, nec faucibus lectus
-              tempus vitae. Nunc nisi est, scelerisque non accumsan vel, tristique
-              quis turpis. In non sem rutrum, luctus nisi vel, efficitur arcu.
-              Pellentesque et sem risus. Nulla erat orci, luctus et scelerisque
-              id, elementum vel lectus. Donec eleifend molestie egestas. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit.
-              <br />
-              </p>
+          <div class="home">
+            <aside>
+              <h1>Salut,</h1>
+              <h1>Je suis Eléazar-Dan,</h1>
+              <h1>Développeur web</h1>
+              <p style="margin-left: 8em;">Full Stack / en Formation</p>
             </aside>
+            </div>
           </div>
         </div>
       </article>
     </section>
-    
-    <footer>
+
+    <section>
+    <article>
       <div class="row">
-        <div class="col">
-           <div class="evolution">
-            <div class="row">
-            </div>
+        <div class="col-6">
+          <div class="portfolio">
+            <aside>
+              <h2>Mon Portfolio</h2>
+             <p>Une petite galerie de projets récents choisis par mes soins.<br> Ils ont tous été realisé par mes soins.</p>
+            </aside>
           </div>
         </div>
-      </div>
-    </footer>
+        <div class="col-10">
+          <div class="table-responsive">
+            <div class="display">
+                <div class="tablet">
+                  <div class="trim">
+                    <iframe title="tablet" id="tablet" src="http://gat-orane/">
+                    </iframe>
+                  </div>
+                </div>
+                <div class="desktop">
+                  <div class="trim">
+                    <iframe title="desktop" id="desktop" src="http://gat-orane/">
+                    </iframe>
+                  </div>
+                </div>
+                <div class="mobile">
+                  <div class="trim">
+                    <iframe title="mobile" id="mobile" src="http://gat-orane/">
+                    </iframe>
+                  </div>
+                </div>
+            </div>
+        </div>
 
-    </div>   <!-- Fin Container -->
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  </body>
-</html>
+      </article>
+    </section>
+
+    <section>    
+      <article>
+        <div class="row">
+          <div class="col">
+            <div class=".">
+              <aside class="row">
+               <h2>Moi ...</h2>
+               <p>Depuis toujours, je suis passionné par le Web.<br>
+                Pendant plus d'une décennie, j'ai eu de nombreuses occasions de travailler dans un vaste éventail de technologies Web, ce qui m'a permis d'accumuler une quantité importante d'expériences diverses.<br> 
+                Travaillant pour des entreprises et des particuliers du monde entier, j'ai rencontré et appris de personnes incroyables et ambitieuses.<br>
+                Je travaille actuellement à distance avec une clientèle indépendante sélectionnée, ouverte à de nouvelles opportunités.</p>
+              </aside>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section>    
+        <article>
+          <div class="row">
+            <div class="col">
+              <div class="contact">
+                <aside class="row">
+                  <h2>Me contacter</h2>
+                  <div class="col-5">
+                   <p>Je suis intéressé par les opportunités de freelance.<br> 
+                    Cependant, si vous avez d'autres demandes ou questions,<br>
+                    n'hésitez pas à utiliser le formulaire.</p>
+                  </div>
+                  <div class="col-2"></div>
+                  <div class="col-5">
+                  <div class="e-loadholder">
+                    <div class="m-loader">
+                    <span class="e-text">Loading</span>
+                    </div>
+                    </div>
+                    <div id="particleCanvas-Blue"></div>
+                    <div id="particleCanvas-White"></div>
+                  </div>
+                  </aside>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <?php   include 'include/footer.html';  ?>
