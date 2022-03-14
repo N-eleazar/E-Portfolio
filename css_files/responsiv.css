@@ -1,9 +1,3 @@
-.wrapper {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .display {
   position: relative;
   left: 0px;
@@ -16,7 +10,7 @@
   width: 95px;
   height: 196px;
   top: 340px;
-  left: 850px;
+  left: 680px;
   z-index: 5;
 }
 .mobile iframe {
@@ -33,7 +27,7 @@
   height: 400px;
   z-index: 2;
   position: absolute;
-  left: 220px;
+  left: 20px;
   top: 230px;
 }
 .tablet iframe {
@@ -50,7 +44,7 @@
   height: 538px;
   background-image: url("http://ami.responsivedesign.is/images/large-screen-optimised.png");
   top: 0px;
-  left: 390px;
+  left: 190px;
   z-index: 1;
 }
 .desktop iframe {
