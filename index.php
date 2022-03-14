@@ -1,22 +1,14 @@
-<!-- A FAIRE
-
-1. Optimisation du code.
-2. Creation du theme Dark & Light.
-3. insersion de bouton pour modif theme.
-
--->
-
 <?php   include 'include/header.html';  ?>
 
   <section>    
     <article id="home">
       <div class="row">
         <div class="col">
-          <aside>
+          <aside class="header">
             <h1>Hello,</h1>
-            <h1>Je suis Eléazar-Dan,</h1>
+            <h1>Je suis Eléazar,</h1>
             <h1>Développeur web</h1>
-            <p style="margin-left: 8em;">Full Stack / en Formation</p>
+            <h3 style="margin-left: 2em;">Full Stack / en Formation</h3>
           </aside>
           </div>
         </div>
@@ -26,13 +18,13 @@
     <section>
       <article id="portfolio">
         <div class="row" >
-          <div class="col col-3">
+          <div class="col col-12">
             <aside>
               <h2>Mon Portfolio</h2>
              <p>Une petite galerie de projets récents choisis par mes soins.<br> Ils ont tous été realisé par mes soins.</p>
             </aside>
           </div>
-          <div class="col col-9">
+          <div class="col col-12">
             <div class="display">
               <div class="tablet">
                 <div class="trim">
@@ -43,12 +35,6 @@
               <div class="desktop">
                 <div class="trim">
                   <iframe title="desktop" id="desktop" src="http://gat-orane/">
-                  </iframe>
-                </div>
-              </div>
-              <div class="mobile">
-                <div class="trim">
-                  <iframe title="mobile" id="mobile" src="http://gat-orane/">
                   </iframe>
                 </div>
               </div>

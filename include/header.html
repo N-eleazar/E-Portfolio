@@ -49,62 +49,34 @@
     <link rel="stylesheet" href="/css_files/responsiv.css" />
 
     <!--   JS Files   -->
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
   </head>
   <body>
     <div class="container-fluid">
-      <header>
-        <div class="row">
-          <div class="bandeau">
-            <div class="col col-3">
-              <div class="logo">
-                <img 
-                  src="/images/zozor_logo.png" 
-                  alt="Logo+Title">
-              </div>
-            </div>    <!-- col bandeau -->
-
-            <nav class=" col col-xl-8 col-6">
-              <div class="navbar navbar-expand-xl navbar-dark">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#">Menu</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarScroll">
-                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#myself">Moi..</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                      </li>
-
-
-                      <li class="nav-item">
-                        <a class="nav-link" href="roadmap.php">RoadMap</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="evolution.php">Evolution</a>
-                      </li>
-
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </nav>    <!-- col nav -->
-            <div class="col">
-              <div class="btn-theme">
-                <button type="button" class="btn btn-success">Dark Mode</button>
-              </div>
+      <header id="home" class="head">
+        <div class="menu">
+          <div class="collapse" id="navbarToggleExternalContent">
+            <div class="p-4">
+              <span><a class="nav-link active" aria-current="page" href="#home">Home</a></span>
+              <span><a class="nav-link" href="#portfolio">Portfolio</a></span>
+              <span><a class="nav-link" href="#myself">Moi..</a></span>
+              <span><a class="nav-link" href="#contact">Contact</a></span>
+              <span><a class="nav-link" href="roadmap.php">RoadMap</a></span>
+              <span><a class="nav-link" href="evolution.php">Evolution</a></span>
             </div>
-          </div>      <!-- bandeau -->
-        </div>        <!-- raw -->
+          </div>
+          <nav class="navbar navbar-dark ">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </nav>
+        </div>
+        <div class="theme">
+          <div class="btn-theme">
+            <button type="button" class="btn btn-success">Dark Mode</button>
+          </div>
+        </div>
       </header>
