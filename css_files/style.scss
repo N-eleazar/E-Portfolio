@@ -8,10 +8,24 @@ $grid-breakpoints: (
 );
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background: wheat;
+  font-family: cursive;
+  background: linear-gradient(-45deg, #ee7752, #6f3ce7, #7575d39a, #0000ff7e);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
   font-size: 16px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 html {
@@ -19,11 +33,7 @@ html {
 }
 
 header {
-  background: linear-gradient(
-    -45deg,
-    rgba(0, 0, 255, 0.493),
-    rgba(117, 117, 211, 0.603)
-  );
+  background: linear-gradient(-45deg, #0000ff7e, #7575d39a);
   overflow: hidden;
   max-height: 4&00px;
 }
@@ -71,8 +81,8 @@ footer {
 h1 {
   font-size: 6.5em;
   font-weight: 700;
-  font-style: italic;
-  color: lighten(#000000, 25%);
+  font-style: 
+  color: lighten(#000000, 5%);
 }
 h1::first-letter,
 p::first-letter {
