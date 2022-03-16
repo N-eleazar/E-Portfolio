@@ -4,7 +4,6 @@
 
 <div class="row">
   <div class="col">
-    <h2 id="evolution">Mon évolution</h2>
     <div class="evolution">
       <aside class="row">
       <div class="col-10">
@@ -15,7 +14,7 @@
             ?>
             <ul><?php echo $update[$i][0];?></ul>
             <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated <?php echo $update[$i][1];?>"
+            <div class="progress-bar <?php echo $update[$i][1];?>"
               role="progressbar"
               style="width: <?php echo $update[$i][2];?>"
               aria-valuenow="<?php echo $update[$i][2];?>"
@@ -36,7 +35,7 @@
             ?>
             <ul><?php echo $frontEnd[$i][0];?></ul>
             <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated <?php echo $frontEnd[$i][1];?>"
+            <div class="progress-bar <?php echo $frontEnd[$i][1];?>"
               role="progressbar"
               style="width: <?php echo $frontEnd[$i][2];?>"
               aria-valuenow="<?php echo $frontEnd[$i][2];?>"
@@ -58,7 +57,7 @@
             ?>
             <ul><?php echo $backEnd[$i][0];?></ul>
             <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated <?php echo $backEnd[$i][1];?>"
+            <div class="progress-bar <?php echo $backEnd[$i][1];?>"
               role="progressbar"
               style="width: <?php echo $backEnd[$i][2];?>"
               aria-valuenow="<?php echo $backEnd[$i][2];?>"
@@ -76,7 +75,7 @@
         <h4>Légende</h4>
         <h6>Niveau 0 :</h6>
           <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated bg-info"
+            <div class="progress-bar bg-info"
               role="progressbar"
               style="width: 5%"
               aria-valuenow="5%"
@@ -87,7 +86,7 @@
             <br />
         <h6>Niveau 25 % :</h6>
         <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated bg"
+            <div class="progress-bar bg"
               role="progressbar"
               style="width: 25%"
               aria-valuenow="25%"
@@ -98,7 +97,7 @@
             
             <h6>Niveau 50 % :</h6>
             <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+            <div class="progress-bar bg-danger"
               role="progressbar"
               style="width: 50%"
               aria-valuenow="50%"
@@ -108,7 +107,7 @@
             <br />
             <h6>Niveau 75 % :</h6>
             <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+            <div class="progress-bar bg-warning"
               role="progressbar"
               style="width: 75%"
               aria-valuenow="75%"
@@ -118,7 +117,7 @@
             <br />
             <h6>Niveau 100 % :</h6>
             <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+            <div class="progress-bar bg-success"
               role="progressbar"
               style="width: 100%"
               aria-valuenow="100%"

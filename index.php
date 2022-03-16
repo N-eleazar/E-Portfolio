@@ -7,7 +7,7 @@
           <aside class="header">
             <h1>Hello,</h1>
             <h1>Je suis Eléazar,</h1>
-            <h1>Développeur web</h1>
+            <h1>Développeur Web<br> et Mobile</h1>
             <h3 style="margin-left: 2em;">Full Stack / en Formation</h3>
           </aside>
           </div>
@@ -44,11 +44,21 @@
         <div class="row">
           <div class="col">
             <div class="menu-site">
+              <ul><button type="button" class="btn btn-primary"> Site _ </button></ul>
+              <ul><button type="button" class="btn btn-secondary"> Site _ </button></ul>
+              <ul><button type="button" class="btn btn-success"> Site _ </button></ul>
+              <ul><button type="button" class="btn btn-danger"> Site _ </button></ul>
+              <ul><button type="button" class="btn btn-info"> Site _ </button></ul>
+              <ul><button type="button" class="btn btn-dark"> Site _ </button></ul>
+            </div>
+            <br>
+            <div class="menu-site">
               <ul><button type="button" class="btn btn-outline-primary"> Site _ </button></ul>
-              <ul><button type="button" class="btn btn-outline-primary"> Site _ </button></ul>
-              <ul><button type="button" class="btn btn-outline-primary"> Site _ </button></ul>
-              <ul><button type="button" class="btn btn-outline-primary"> Site _ </button></ul>
-              <ul><button type="button" class="btn btn-outline-primary"> Site _ </button></ul>
+              <ul><button type="button" class="btn btn-outline-secondary"> Site _ </button></ul>
+              <ul><button type="button" class="btn btn-outline-success"> Site _ </button></ul>
+              <ul><button type="button" class="btn btn-outline-danger"> Site _ </button></ul>
+              <ul><button type="button" class="btn btn-outline-info"> Site _ </button></ul>
+              <ul><button type="button" class="btn btn-outline-dark"> Site _ </button></ul>
             </div>
           </div>
         </div>        
