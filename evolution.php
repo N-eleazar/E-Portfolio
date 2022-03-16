@@ -4,24 +4,15 @@ require 'valeurs.php';
 ?>
 
   <section>
-<<<<<<< Updated upstream
     <article>
-      <?php 
-        require 'valeurs.php'; 
-        require 'mon_evolution.php'; 
-      ?>
-  </article>
-    </section>
-    <footer></footer>
-    </div>   <!-- Fin Container -->
-=======
-    <article id="evolution">
-    <?php
+    <<<<<<< Updated upstream
+<?php
   require 'valeurs.php';
 ?>
 
 <div class="row">
   <div class="col">
+    <h2 id="evolution">Mon évolution</h2>
     <div class="evolution">
       <aside class="row">
       <div class="col-10">
@@ -32,7 +23,7 @@ require 'valeurs.php';
             ?>
             <ul><?php echo $update[$i][0];?></ul>
             <div class="progress">
-            <div class="progress-bar <?php echo $update[$i][1];?>"
+            <div class="progress-bar progress-bar-striped progress-bar-animated <?php echo $update[$i][1];?>"
               role="progressbar"
               style="width: <?php echo $update[$i][2];?>"
               aria-valuenow="<?php echo $update[$i][2];?>"
@@ -53,7 +44,7 @@ require 'valeurs.php';
             ?>
             <ul><?php echo $frontEnd[$i][0];?></ul>
             <div class="progress">
-            <div class="progress-bar <?php echo $frontEnd[$i][1];?>"
+            <div class="progress-bar progress-bar-striped progress-bar-animated <?php echo $frontEnd[$i][1];?>"
               role="progressbar"
               style="width: <?php echo $frontEnd[$i][2];?>"
               aria-valuenow="<?php echo $frontEnd[$i][2];?>"
@@ -75,7 +66,7 @@ require 'valeurs.php';
             ?>
             <ul><?php echo $backEnd[$i][0];?></ul>
             <div class="progress">
-            <div class="progress-bar <?php echo $backEnd[$i][1];?>"
+            <div class="progress-bar progress-bar-striped progress-bar-animated <?php echo $backEnd[$i][1];?>"
               role="progressbar"
               style="width: <?php echo $backEnd[$i][2];?>"
               aria-valuenow="<?php echo $backEnd[$i][2];?>"
@@ -93,7 +84,7 @@ require 'valeurs.php';
         <h4>Légende</h4>
         <h6>Niveau 0 :</h6>
           <div class="progress">
-            <div class="progress-bar bg-info"
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-info"
               role="progressbar"
               style="width: 5%"
               aria-valuenow="5%"
@@ -104,7 +95,7 @@ require 'valeurs.php';
             <br />
         <h6>Niveau 25 % :</h6>
         <div class="progress">
-            <div class="progress-bar bg"
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg"
               role="progressbar"
               style="width: 25%"
               aria-valuenow="25%"
@@ -115,7 +106,7 @@ require 'valeurs.php';
             
             <h6>Niveau 50 % :</h6>
             <div class="progress">
-            <div class="progress-bar bg-danger"
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
               role="progressbar"
               style="width: 50%"
               aria-valuenow="50%"
@@ -125,7 +116,7 @@ require 'valeurs.php';
             <br />
             <h6>Niveau 75 % :</h6>
             <div class="progress">
-            <div class="progress-bar bg-warning"
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
               role="progressbar"
               style="width: 75%"
               aria-valuenow="75%"
@@ -135,7 +126,7 @@ require 'valeurs.php';
             <br />
             <h6>Niveau 100 % :</h6>
             <div class="progress">
-            <div class="progress-bar bg-success"
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
               role="progressbar"
               style="width: 100%"
               aria-valuenow="100%"
@@ -147,13 +138,13 @@ require 'valeurs.php';
     </div>
   </div>
 </div>
-    </article>
-  </section>
-    
-  
-  <footer></footer>
-  </div>   <!-- Fin Container -->
+=======
 >>>>>>> Stashed changes
+
+  </article>
+    </section>
+    <footer></footer>
+    </div>   <!-- Fin Container -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>
