@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <?php
   require 'valeurs.php';
 ?>
@@ -130,3 +131,5 @@
     </div>
   </div>
 </div>
+=======
+>>>>>>> Stashed changes
