@@ -7,7 +7,7 @@
           <aside class="header">
             <h1>Hello,</h1>
             <h1>Je suis Eléazar,</h1>
-            <h1>Développeur web</h1>
+            <h1>Développeur Web<br> et Mobile</h1>
             <h3 style="margin-left: 2em;">Full Stack / en Formation</h3>
           </aside>
           </div>
@@ -44,12 +44,11 @@
         <div class="row">
           <div class="col">
             <div class="menu-site">
-              <ul><button type="button" class="btn btn-outline-primary"> Site _ </button></ul>
-              <ul><button type="button" class="btn btn-outline-primary"> Site _ </button></ul>
-              <ul><button type="button" class="btn btn-outline-primary"> Site _ </button></ul>
-              <ul><button type="button" class="btn btn-outline-primary"> Site _ </button></ul>
-              <ul><button type="button" class="btn btn-outline-primary"> Site _ </button></ul>
+              <ul><button type="button" id="btn1" name="btn_site1" value="btn_site1" onClick="displayProject('site1')" class="btn btn-info">Gat'Orane</button></ul>
+              <ul><button type="button" id="btn2" name="btn_site2" value="btn_site2" onClick="displayProject('site2')" class="btn btn-primary">Picsum</button></ul>
+              <ul><button type="button" id="btn3" name="btn_site3" value="btn_site3" onClick="displayProject('site3')" class="btn btn-primary">Site_Test</button></ul>
             </div>
+            <br>
           </div>
         </div>        
       </article>
