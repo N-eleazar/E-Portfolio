@@ -44,22 +44,12 @@
         <div class="row">
           <div class="col">
             <div class="menu-site">
-              <ul><button type="button" class="btn btn-primary"> Site _ </button></ul>
-              <ul><button type="button" class="btn btn-secondary"> Site _ </button></ul>
-              <ul><button type="button" class="btn btn-success"> Site _ </button></ul>
-              <ul><button type="button" class="btn btn-danger"> Site _ </button></ul>
-              <ul><button type="button" class="btn btn-info"> Site _ </button></ul>
-              <ul><button type="button" class="btn btn-dark"> Site _ </button></ul>
+              <ul><button type="button" id="btn1" name="btn_site1" value="btn_site1" onClick="displayProject('site1')" class="btn btn-info">Gat'Orane</button></ul>
+              <ul><button type="button" id="btn2" name="btn_site2" value="btn_site2" onClick="displayProject('site2')" class="btn btn-primary">Picsum</button></ul>
+              <ul><button type="button" id="btn3" name="btn_site3" value="btn_site3" onClick="displayProject('site3')" class="btn btn-primary">Site_Test</button></ul>
             </div>
             <br>
-            <div class="menu-site">
-              <ul><button type="button" class="btn btn-outline-primary"> Site _ </button></ul>
-              <ul><button type="button" class="btn btn-outline-secondary"> Site _ </button></ul>
-              <ul><button type="button" class="btn btn-outline-success"> Site _ </button></ul>
-              <ul><button type="button" class="btn btn-outline-danger"> Site _ </button></ul>
-              <ul><button type="button" class="btn btn-outline-info"> Site _ </button></ul>
-              <ul><button type="button" class="btn btn-outline-dark"> Site _ </button></ul>
-            </div>
+            
           </div>
         </div>        
       </article>

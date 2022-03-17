@@ -7,7 +7,7 @@
 }
 
 .tablet {
-  background-image: url("http://ami.responsivedesign.is/images/ipad-optimised.png");
+  background-image: url("/images/ipad-optimised.png");
   width: 246px;
   height: 400px;
   z-index: 3;
@@ -28,7 +28,7 @@
   position: absolute;
   width: 566px;
   height: 538px;
-  background-image: url("http://ami.responsivedesign.is/images/large-screen-optimised.png");
+  background-image: url("/images/large-screen-optimised.png");
   top: 0px;
   left: 220px;
   z-index: 1;
