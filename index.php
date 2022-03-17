@@ -4,7 +4,7 @@
     <article id="home">
       <div class="row">
         <div class="col">
-          <aside class="header">
+          <aside class="header" aria-label="">
             <h1>Hello,</h1>
             <h1>Je suis Eléazar,</h1>
             <h1>Développeur Web<br> et Mobile</h1>
@@ -19,7 +19,7 @@
       <article id="portfolio">
         <div class="row" >
           <div class="col col-12">
-            <aside>
+            <aside aria-label="">
               <h2>Mon Portfolio</h2>
              <p>Une petite galerie de projets récents choisis par mes soins.<br> Ils ont tous été realisé par mes soins.</p>
             </aside>
@@ -58,7 +58,7 @@
       <article id="myself">
         <div class="row">
           <div class="col">
-            <aside>
+            <aside aria-label="">
               <h2>Moi ...</h2>
               <p>Depuis toujours, je suis passionné par le Web.<br>
                Pendant plus d'une décennie, j'ai eu de nombreuses occasions de travailler dans un vaste éventail de technologies Web, ce qui m'a permis d'accumuler une quantité importante d'expériences diverses.<br> 
@@ -74,7 +74,7 @@
         <article id="contact">
           <div class="row">
             <div class="col">
-              <aside class="row">
+              <aside class="row" aria-label="">
                 <h2>Me contacter</h2>
                 <div class="col-5">
                  <p>Je suis intéressé par les opportunités de freelance.<br> 

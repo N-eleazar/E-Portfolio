@@ -4,18 +4,13 @@ require 'valeurs.php';
 ?>
 
   <section>
-<<<<<<< HEAD
     <article>
-    <<<<<<< Updated upstream
-<?php
-  require 'valeurs.php';
-?>
 
 <div class="row">
   <div class="col">
     <h2 id="evolution">Mon évolution</h2>
     <div class="evolution">
-      <aside class="row">
+      <aside class="row" aria-label="">
       <div class="col-10">
         <h4>Mise à Niveau</h4>
         <?php
@@ -36,7 +31,7 @@ require 'valeurs.php';
             }
         ?>
       </aside><br>
-      <aside class="row">
+      <aside class="row" aria-label="">
         <div class="col-10">
         <h4>Le développement Front-End</h4>
         <?php
@@ -58,7 +53,7 @@ require 'valeurs.php';
         ?>
         </div>
         </aside><br>
-      <aside class="row"> 
+      <aside class="row" aria-label=""> 
         <div class="col-10">
         <h4>Le développement Back-End</h4>
         <?php
@@ -80,7 +75,7 @@ require 'valeurs.php';
         ?>       
         </div>
       </aside><br>
-      <aside class="row"> 
+      <aside class="row" aria-label=""> 
         <div class="col-10">
         <h4>Légende</h4>
         <h6>Niveau 0 :</h6>
@@ -139,8 +134,6 @@ require 'valeurs.php';
     </div>
   </div>
 </div>
-=======
->>>>>>> Stashed changes
 
   </article>
     </section>
