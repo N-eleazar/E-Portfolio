@@ -51,34 +51,32 @@
     <!--   JS Files   -->
     <script src="/js_files/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="/js_files/displayResponsiv.js"></script>
+    <script>
+      function getResolution() {
+        alert("Votre résolution d'écran est: " + screen.width + "x" + screen.height);
+      }
+    </script>
   
   </head>
   <body>
     <div class="container-fluid">
       <header>
-        <nav>
-          <nav class="navbar navbar-light">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="navbar-brand" href="#">Hidden brand</a>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </nav>
+        <div class="row">
+          <div class="col site-logo">
+            <img 
+            src="/images/zozor_logo.png" 
+            alt="Site_Logo" 
+            width="80px"
+            height="80px"
+            srcset="">
+          </div>
+          
+          <div class="col col-1">
+            <nav class="navbar navbar-light">
+              <button type="button" onclick="getResolution();">Récupérer la résolution</button>
+            </nav>
+          </div>
+        </div>
       </header>
 
       <section>    
@@ -89,7 +87,7 @@
                 <h1>Hello,</h1>
                 <h1>Je suis Eléazar,</h1>
                 <h1>Développeur Web<br> et Mobile</h1>
-                <h3 style="margin-left: 2em;">Full Stack / en Formation</h3>
+                <h3 style="margin-left: 2em;">en Formation</h3>
               </aside>
               </div>
             </div>
@@ -102,24 +100,41 @@
               <div class="col col-12">
                 <aside aria-label="">
                   <h2>Mon Portfolio</h2>
-                 <p>Une petite galerie de projets récents choisis par mes soins.<br> Ils ont tous été realisé par mes soins.</p>
+                 <p>Une petite galerie de projets récents choisis par mes soins.<br> 
+                  </p>
                 </aside>
               </div>
               <div class="col col-12">
-                <div class="display">
+                <div class="wrapper">
+                  <section class="display">
+                  <div class="mobile">
+                    <div class="trim">
+                    <iframe id="mobile" src="http://127.0.0.1:5502/">
+                    </iframe>
+                  </div>
+                  </div>
+                  
                   <div class="tablet">
                     <div class="trim">
-                      <iframe title="tablet" id="tablet" src="http://gat-orane/">
-                      </iframe>
-                    </div>
+                    <iframe id="tablet" src="http://127.0.0.1:5502/">
+                    </iframe>
+                  </div>
+                  </div>
+                  <div class="laptop">
+                    <div class="trim">
+                    <iframe id="laptop" src="http://127.0.0.1:5502/">
+                    </iframe>
+                  </div>
                   </div>
                   <div class="desktop">
                     <div class="trim">
-                      <iframe title="desktop" id="desktop" src="http://gat-orane/">
-                      </iframe>
-                    </div>
+                    <iframe id="desktop" src="http://127.0.0.1:5502/">
+                    </iframe>
                   </div>
-                </div>
+                  </div>
+                  
+                  </section>
+                  </div>
               </div>
             </div>  
             <div class="row">
@@ -142,10 +157,7 @@
               <div class="col">
                 <aside aria-label="">
                   <h2>Moi ...</h2>
-                  <p>Depuis toujours, je suis passionné par le Web.<br>
-                   Pendant plus d'une décennie, j'ai eu de nombreuses occasions de travailler dans un vaste éventail de technologies Web, ce qui m'a permis d'accumuler une quantité importante d'expériences diverses.<br> 
-                   Travaillant pour des entreprises et des particuliers du monde entier, j'ai rencontré et appris de personnes incroyables et ambitieuses.<br>
-                   Je travaille actuellement à distance avec une clientèle indépendante sélectionnée, ouverte à de nouvelles opportunités.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </aside>
               </div>
             </div>
@@ -165,7 +177,7 @@
                     </div>
                     <div class="col-11 col-lg-5">
                       <div class="m-form">
-                        <span class="e-text">Loading ...</span>
+                        <img src="/images/construction.png" alt="">
                       </div>
                     </div>
                   </aside>

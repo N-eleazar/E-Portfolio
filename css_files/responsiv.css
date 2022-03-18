@@ -1,54 +1,19 @@
+.wrapper {
+  width: auto;
+  max-width: 1600px;
+  margin: 0 auto;
+  border: 1px solid;
+}
+
 .display {
   position: relative;
   left: 0px;
-  height: 600px;
-  width: auto;
-  z-index: 0;
+  height: 800px;
 }
 
-.tablet {
-  background-image: url("/images/ipad-optimised.png");
-  width: 246px;
-  height: 400px;
-  z-index: 3;
-  position: absolute;
-  left: 120px;
-  top: 230px;
-}
-
-.tablet iframe {
-  width: 768px;
-  height: 1024px;
-  top: 35px;
-  left: 38px;
-  overflow-y: hidden;
-}
-
-.desktop {
-  position: absolute;
-  width: 566px;
-  height: 538px;
-  background-image: url("/images/large-screen-optimised.png");
-  top: 0px;
-  left: 220px;
-  z-index: 1;
-}
-
-.desktop iframe {
-  left: 28px;
-  top: 38px;
-  width: 1600px;
-  height: 992px;
-  transform: scale(0.3181);
-  -webkit-transform: scale(0.3181);
-  -o-transform: scale(0.3181);
-  -ms-transform: scale(0.3181);
-  -moz-transform: scale(0.3181);
-  transform-origin: top left;
-  -webkit-transform-origin: top left;
-  -o-transform-origin: top left;
-  -ms-transform-origin: top left;
-  -moz-transform-origin: top left;
+form {
+  width: 85%;
+  margin: 1em auto;
 }
 
 div {
@@ -75,68 +40,221 @@ iframe {
   border-color: #000;
 }
 
-/*  RESPONSIVE DESIGN  */
-@media (max-width: 1070px) {
-  .display {
-    left: -50px;
-  }
+/*  Position des Appareils  */
+.mobile {
+  background-image: url("http://ami.responsivedesign.is/images/iphone-optimised.png");
+  position: absolute;
+  width: 95px;
+  height: 196px;
+  top: 380px;
+  left: 29%;
+  z-index: 5;
 }
 
-@media (max-width: 1000px) {
+.tablet {
+  background-image: url("http://ami.responsivedesign.is/images/ipad-optimised.png");
+  width: 246px;
+  height: 400px;
+  z-index: 3;
+  position: absolute;
+  left: 10%;
+  top: 280px;
+}
+
+.laptop {
+  background-image: url("http://ami.responsivedesign.is/images/laptop-screen-optimised.png");
+  width: 477px;
+  height: 307px;
+  top: 300px;
+  right: 4%;
+  position: absolute;
+  z-index: 2;
+}
+
+.desktop {
+  position: absolute;
+  width: 566px;
+  height: 538px;
+  background-image: url("http://ami.responsivedesign.is/images/large-screen-optimised.png");
+  top: 0px;
+  left: 30%;
+  z-index: 1;
+}
+
+/*  Position iframe  */
+.mobile iframe {
+  width: 320px;
+  height: 480px;
+  top: 32px;
+  left: 11px;
+  overflow-y: hidden;
+}
+
+.tablet iframe {
+  width: 768px;
+  height: 1024px;
+  top: 35px;
+  left: 38px;
+  overflow-y: hidden;
+}
+
+.laptop iframe {
+  width: 1280px;
+  height: 802px;
+  top: 26px;
+  left: 60px;
+  transform: scale(0.277);
+  -webkit-transform: scale(0.277);
+  -o-transform: scale(0.277);
+  -ms-transform: scale(0.277);
+  -moz-transform: scale(0.277);
+  transform-origin: top left;
+  -webkit-transform-origin: top left;
+  -o-transform-origin: top left;
+  -ms-transform-origin: top left;
+  -moz-transform-origin: top left;
+}
+
+.desktop iframe {
+  left: 28px;
+  top: 38px;
+  width: 1600px;
+  height: 992px;
+  transform: scale(0.3181);
+  -webkit-transform: scale(0.3181);
+  -o-transform: scale(0.3181);
+  -ms-transform: scale(0.3181);
+  -moz-transform: scale(0.3181);
+  transform-origin: top left;
+  -webkit-transform-origin: top left;
+  -o-transform-origin: top left;
+  -ms-transform-origin: top left;
+  -moz-transform-origin: top left;
+}
+
+/*  Responsive Design  */
+@media (max-width: 1600px) {
   .display {
-    height: 500px;
-    transform: scale(0.71);
-    -webkit-transform: scale(0.71);
-    -o-transform: scale(0.71);
-    -ms-transform: scale(0.71);
-    -moz-transform: scale(0.71);
-    top: -40px;
+    width: 95%;
+    height: 550px;
+    transform: scale(0.78);
+    -webkit-transform: scale(0.78);
+    -o-transform: scale(0.78);
+    -ms-transform: scale(0.78);
+    -moz-transform: scale(0.78);
   }
   .desktop {
-    left: 140px;
+    left: 300px;
+  }
+  .laptop {
+    left: 800px;
   }
   .tablet {
-    left: 40px;
+    left: 0px;
+  }
+  .mobile {
+    left: 250px;
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1450px) {
   .display {
-    height: 500px;
+    width: 95%;
+    height: 550px;
+    left: -100px;
+    transform: scale(0.75);
+    -webkit-transform: scale(0.75);
+    -o-transform: scale(0.75);
+    -ms-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+  }
+}
+
+@media (max-width: 1250px) {
+  .display {
+    width: 95%;
+    height: 550px;
+    left: -120px;
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    -o-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+  }
+}
+
+/* ------------------------- */
+@media (max-width: 1160px) {
+  .display {
+    width: 95%;
+    height: 550px;
+    left: -140px;
     transform: scale(0.65);
     -webkit-transform: scale(0.65);
     -o-transform: scale(0.65);
     -ms-transform: scale(0.65);
     -moz-transform: scale(0.65);
   }
-  .desktop {
-    left: 100px;
-  }
-  .tablet {
-    left: 0px;
+}
+
+@media (max-width: 1070px) {
+  .display {
+    width: 95%;
+    height: 550px;
+    left: -140px;
+    transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -moz-transform: scale(0.6);
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .display {
-    height: 450px;
+    height: 500px;
     transform: scale(0.55);
     -webkit-transform: scale(0.55);
     -o-transform: scale(0.55);
     -ms-transform: scale(0.55);
     -moz-transform: scale(0.55);
   }
+  .laptop {
+    left: 700px;
+  }
+}
+
+@media (max-width: 850px) {
+  .display {
+    height: 500px;
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+  }
+}
+
+@media (max-width: 768px) {
+  .display {
+    height: 450px;
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+  }
 }
 
 @media (max-width: 670px) {
   .display {
     height: 400px;
-    left: -70px;
-    transform: scale(0.45);
-    -webkit-transform: scale(0.45);
-    -o-transform: scale(0.45);
-    -ms-transform: scale(0.45);
-    -moz-transform: scale(0.45);
+    left: -130px;
+    transform: scale(0.35);
+    -webkit-transform: scale(0.35);
+    -o-transform: scale(0.35);
+    -ms-transform: scale(0.35);
+    -moz-transform: scale(0.35);
   }
 }
 
@@ -144,11 +262,12 @@ iframe {
   .display {
     height: 270px;
     top: -65px;
-    transform: scale(0.37);
-    -webkit-transform: scale(0.37);
-    -o-transform: scale(0.37);
-    -ms-transform: scale(0.37);
-    -moz-transform: scale(0.37);
+    left: -110px;
+    transform: scale(0.25);
+    -webkit-transform: scale(0.25);
+    -o-transform: scale(0.25);
+    -ms-transform: scale(0.25);
+    -moz-transform: scale(0.25);
   }
 }
 
@@ -157,11 +276,11 @@ iframe {
     left: -17px;
     top: -65px;
     width: 70px;
-    transform: scale(0.35);
-    -webkit-transform: scale(0.35);
-    -o-transform: scale(0.35);
-    -ms-transform: scale(0.35);
-    -moz-transform: scale(0.35);
+    transform: scale(0.22);
+    -webkit-transform: scale(0.22);
+    -o-transform: scale(0.22);
+    -ms-transform: scale(0.22);
+    -moz-transform: scale(0.22);
   }
 }
 
@@ -171,17 +290,11 @@ iframe {
     left: -17px;
     top: -65px;
     width: 70px;
-    transform: scale(0.27);
-    -webkit-transform: scale(0.27);
-    -o-transform: scale(0.27);
-    -ms-transform: scale(0.27);
-    -moz-transform: scale(0.27);
-  }
-  .desktop {
-    left: 100px;
-  }
-  .tablet {
-    left: 0px;
+    transform: scale(0.18);
+    -webkit-transform: scale(0.18);
+    -o-transform: scale(0.18);
+    -ms-transform: scale(0.18);
+    -moz-transform: scale(0.18);
   }
 }
 /*# sourceMappingURL=responsiv.css.map */

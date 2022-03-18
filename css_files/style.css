@@ -35,10 +35,21 @@ html {
   scroll-behavior: smooth;
 }
 
-.navbar {
-  position: fixed;
-  top: 10px;
-  right: 10px;
+header {
+  margin-top: 1em;
+}
+
+header .row {
+  width: 100%;
+}
+
+header .col-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header h1 {
@@ -70,7 +81,6 @@ html {
   color: whitesmoke;
 }
 
-header,
 section,
 footer {
   padding-top: 2em;

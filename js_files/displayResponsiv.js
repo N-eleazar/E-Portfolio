@@ -10,6 +10,8 @@ switch(btnId) {
   case "site1":
     document.getElementById("desktop").src = url1
     document.getElementById("tablet").src = url1
+    document.getElementById("mobile").src = url1
+    document.getElementById("laptop").src = url1
     document.getElementById('btn1').className = "btn btn-info"
     document.getElementById('btn2').className = "btn btn-primary"
     document.getElementById('btn3').className = "btn btn-primary"
@@ -17,8 +19,10 @@ switch(btnId) {
     break;
 
   case "site2":
-    document.getElementById('desktop').src = url2
+    document.getElementById("desktop").src = url2
     document.getElementById("tablet").src = url2
+    document.getElementById("mobile").src = url2
+    document.getElementById("laptop").src = url2
     document.getElementById('btn1').className = "btn btn-primary"
     document.getElementById('btn2').className = "btn btn-info" 
     document.getElementById('btn3').className = "btn btn-primary"
@@ -26,8 +30,10 @@ switch(btnId) {
     break;
 
   case "site3":
-    document.getElementById('desktop').src = url3
+    document.getElementById("desktop").src = url3
     document.getElementById("tablet").src = url3
+    document.getElementById("mobile").src = url3
+    document.getElementById("laptop").src = url3
     document.getElementById('btn1').className = "btn btn-primary"
     document.getElementById('btn2').className = "btn btn-primary"
     document.getElementById('btn3').className = "btn btn-info"
@@ -35,8 +41,10 @@ switch(btnId) {
     break; 
 
   case "site4":
-    document.getElementById('desktop').src = url4
+    document.getElementById("desktop").src = url4
     document.getElementById("tablet").src = url4
+    document.getElementById("mobile").src = url4
+    document.getElementById("laptop").src = url4
     document.getElementById('btn1').className = "btn btn-primary"
     document.getElementById('btn2').className = "btn btn-primary"
     document.getElementById('btn3').className = "btn btn-primary"
