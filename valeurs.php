@@ -7,7 +7,7 @@ $update = [
 $frontEnd = [
   ['Créer un site web avec Flexbox et le Framework Bootstrap', 'bg-success', '100%'],
   ['Utiliser Git et Github pour gérer son code source', 'bg-success', '100%'],
-  ['Initiation à la programmation avec Javascript', 'bg-warning', '60%'],
+  ['Initiation à la programmation avec Javascript', 'bg-warning', '70%'],
   ['Dynamiser vos sites web avec Javascript', 'bg-info', '5%'],
   ['Réaliser la maquette d\'une application web responsive', 'bg-info', '5%'],
   ['Créer un site web avec le CMS Wordpress', 'bg-info', '5%'],
