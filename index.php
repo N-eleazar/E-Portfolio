@@ -1,4 +1,4 @@
-<?php   include 'include/header.html';  ?>
+<?php   include 'include/header.php';  ?>
 
   <section>    
     <article id="home">
