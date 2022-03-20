@@ -43,12 +43,11 @@
  <!--  JS Files  -->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
  <script src="js_files/bootstrap.bundle.min.js"></script>
- <script src="js_files/displayResponsiv.js"></script>
  <script src="js_files/script.js"></script>
 </head>
 
 <body>
-  < class="container-fluid">
+  <div class="container-fluid">
     <!--   Header   -->
     <header class="row">
     <!--   Navbar   -->  
@@ -82,7 +81,7 @@
         </nav>
       </div>
       <div class="col col-2">
-        <input type="button" class="scroll btn-secondary" id="scrollToTop" value="Retour en haut" onclick="scrollToTop()">
+        <button type="button" class="scroll" onclick="scrollToTop()">Scroll Top</button>
       </div>
     </header>
 
@@ -144,11 +143,11 @@
          </div>
         </div>
         <div class="menuSite">
-            <input type="button" id="btn1" value="Projet 1" onclick="displayProject('site1')">
-            <input type="button" id="btn2" value="Projet 2" onclick="displayProject('site2')">
-            <input type="button" id="btn3" value="Projet 3" onclick="displayProject('site3')">
-            <input type="button" id="btn4" value="Projet 4" onclick="displayProject('site4')">
-        </div>
+          <button type="button" onclick="displayProject('site1');">Project 01</button>
+          <button type="button" onclick="displayProject('site2');">Project 02</button>
+          <button type="button" onclick="displayProject('site3');">Project 03</button>
+          <button type="button" onclick="displayProject('site4');">Project 04</button>
+        </div
       </div>
     </section>
 

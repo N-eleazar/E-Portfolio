@@ -195,14 +195,4 @@ iframe {
   -ms-transform-origin: top left;
   -moz-transform-origin: top left;
 }
-
-.menuSite {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-left: 8em;
-  margin-right: 8em;
-}
 /*# sourceMappingURL=style.css.map */
