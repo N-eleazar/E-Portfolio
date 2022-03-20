@@ -23,6 +23,7 @@ html {
 body,
 html {
   height: 100%;
+  max-height: 1600px;
   color: #777;
   line-height: 1.8;
   background: whitesmoke;
@@ -42,6 +43,12 @@ header {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+section {
+  border: 2px solid;
+  padding-top: 3.5em;
+  padding-bottom: 4em;
 }
 
 .bgimg {
@@ -74,6 +81,11 @@ h3 {
   padding-right: 4.5em;
 }
 
+.title {
+  text-align: center;
+  padding-bottom: 1em;
+}
+
 .hello {
   background-color: wheat;
   display: -webkit-box;
@@ -102,11 +114,6 @@ h3 {
           justify-content: center;
 }
 
-.level .title {
-  text-align: center;
-  padding-bottom: 1em;
-}
-
 .portfolio {
   background-color: wheat;
   display: -webkit-box;
@@ -117,8 +124,25 @@ h3 {
           justify-content: center;
 }
 
-.portfolio .title {
+.contact {
+  background-color: antiquewhite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer {
+  background-color: wheat;
+  height: 150px;
   text-align: center;
+}
+
+form {
+  border-radius: 5px;
+  padding: 0 2rem;
+  width: 25rem;
 }
 
 .display {

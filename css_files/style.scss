@@ -27,6 +27,7 @@ html {
 body,
 html {
   height: 100%;
+  max-height: 1600px;
   color: #777;
   line-height: 1.8;
   background: whitesmoke;
@@ -43,6 +44,12 @@ header {
   border: 1px solid;
   display: flex;
   justify-content: space-around;
+}
+
+section {
+  border: 2px solid;
+  padding-top: 3.5em;
+  padding-bottom: 4em;
 }
 
 .bgimg {
@@ -72,6 +79,11 @@ h3 {
   }
 }
 
+.title {
+  text-align: center;
+  padding-bottom: 1em;
+}
+
 .hello {
   background-color: wheat;
   display: flex;
@@ -89,19 +101,29 @@ h3 {
   background-color: antiquewhite;
   display: flex;
   justify-content: center;
-  .title {
-    text-align: center;
-    padding-bottom: 1em;
-  }
 }
 
 .portfolio {
   background-color: wheat;
   display: flex;
   justify-content: center;
-  .title {
-    text-align: center;
-  }
+}
+
+.contact {
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer {
+  background-color: wheat;
+  height: 150px;
+  text-align: center;
+}
+form {
+  border-radius: 5px;
+  padding: 0 2rem;
+  width: 25rem;
 }
 
 .display {
