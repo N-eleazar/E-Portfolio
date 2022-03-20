@@ -38,33 +38,6 @@ iframe {
 }
 
 /*  Position des Appareils  */
-.mobile {
-  background-image: url("http://ami.responsivedesign.is/images/iphone-optimised.png");
-  position: absolute;
-  width: 95px;
-  height: 196px;
-  top: 380px;
-  left: 29%;
-  z-index: 5;
-}
-.tablet {
-  background-image: url("http://ami.responsivedesign.is/images/ipad-optimised.png");
-  width: 246px;
-  height: 400px;
-  z-index: 3;
-  position: absolute;
-  left: 10%;
-  top: 280px;
-}
-.laptop {
-  background-image: url("http://ami.responsivedesign.is/images/laptop-screen-optimised.png");
-  width: 477px;
-  height: 307px;
-  top: 300px;
-  right: 4%;
-  position: absolute;
-  z-index: 2;
-}
 .desktop {
   position: absolute;
   width: 566px;
@@ -76,39 +49,6 @@ iframe {
 }
 
 /*  Position iframe  */
-.mobile iframe {
-  width: 320px;
-  height: 480px;
-  top: 32px;
-  left: 11px;
-  overflow-y: hidden;
-}
-
-.tablet iframe {
-  width: 768px;
-  height: 1024px;
-  top: 35px;
-  left: 38px;
-  overflow-y: hidden;
-}
-
-.laptop iframe {
-  width: 1280px;
-  height: 802px;
-  top: 26px;
-  left: 60px;
-  transform: scale(0.277);
-  -webkit-transform: scale(0.277);
-  -o-transform: scale(0.277);
-  -ms-transform: scale(0.277);
-  -moz-transform: scale(0.277);
-  transform-origin: top left;
-  -webkit-transform-origin: top left;
-  -o-transform-origin: top left;
-  -ms-transform-origin: top left;
-  -moz-transform-origin: top left;
-}
-
 .desktop iframe {
   left: 28px;
   top: 38px;

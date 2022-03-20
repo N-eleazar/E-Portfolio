@@ -1,49 +1,99 @@
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background: linear-gradient(-45deg, #ee7752, #6f3ce7, #7575d39a, #0000ff7e);
-  background-size: 400% 400%;
-  -webkit-animation: gradient 15s ease infinite;
-          animation: gradient 15s ease infinite;
-  font-size: 16px;
+/* latin-ext */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lato/v22/S6uyw4BMUTPHjxAwXjeu.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
-@-webkit-keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+/* latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lato/v22/S6uyw4BMUTPHjx4wXg.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+body,
+html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+  background: whitesmoke;
+}
+
+.scroll {
+  position: fixed;
+  right: 2em;
+  top: 1em;
+}
+
+/* Create a Parallax Effect */
 header {
-  margin-top: 1em;
+  border: 1px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-header .row {
-  width: 100%;
+.bgimg {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: wheat;
 }
 
-header .col-1 {
+h3 {
+  color: dimgray;
+}
+
+.about {
+  background-color: antiquewhite;
+}
+
+.about h1 {
+  color: dimgray;
+  text-align: justify;
+  padding-left: 4em;
+  font-weight: 600;
+}
+
+.about p {
+  padding-left: 4.5em;
+  padding-right: 4.5em;
+}
+
+.hello {
+  background-color: wheat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.hello .title {
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.hello p {
+  text-align: justify;
+}
+
+.level {
+  background-color: antiquewhite;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -52,131 +102,83 @@ header .col-1 {
           justify-content: center;
 }
 
-.header h1 {
-  font-size: 5.5em;
-  font-weight: 700;
-  font-style: italic;
-  color: #1a1a1a;
+.level .title {
+  text-align: center;
+  padding-bottom: 1em;
 }
 
-@media screen and (max-width: 992px) {
-  .header h1 {
-    font-size: 4.4em;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .header h1 {
-    font-size: 3.3em;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .header h1 {
-    font-size: 2.2em;
-  }
-}
-
-.header h3 {
-  color: whitesmoke;
-}
-
-section,
-footer {
-  padding-top: 2em;
-  padding-bottom: 5em;
+.portfolio {
+  background-color: wheat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-bottom: 1px solid black;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-article {
-  width: 80%;
-  padding-top: 4em;
+.portfolio .title {
+  text-align: center;
 }
 
-h2 {
-  text-align: left;
-  font-size: 3em;
-  font-style: italic;
-  padding-bottom: 1em;
-  text-decoration: overline;
-  color: palegoldenrod;
+.display {
+  position: relative;
+  left: 0px;
+  height: 600px;
 }
 
-p {
-  font-size: 1.5em;
-  font-weight: 500;
-  font-style: italic;
-  color: whitesmoke;
+iframe {
+  transform: scale(0.219);
+  -webkit-transform: scale(0.219);
+  -o-transform: scale(0.219);
+  -ms-transform: scale(0.219);
+  -moz-transform: scale(0.219);
+  transform-origin: top left;
+  -webkit-transform-origin: top left;
+  -o-transform-origin: top left;
+  -ms-transform-origin: top left;
+  -moz-transform-origin: top left;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-color: #fff;
+  border-color: #000;
 }
 
-/*   Portfolio   */
+.desktop {
+  position: absolute;
+  width: 566px;
+  height: 538px;
+  background-image: url("http://ami.responsivedesign.is/images/large-screen-optimised.png");
+  top: 0px;
+  left: 30%;
+  z-index: 1;
+}
+
+.desktop iframe {
+  left: 28px;
+  top: 38px;
+  width: 1600px;
+  height: 992px;
+  transform: scale(0.3181);
+  -webkit-transform: scale(0.3181);
+  -o-transform: scale(0.3181);
+  -ms-transform: scale(0.3181);
+  -moz-transform: scale(0.3181);
+  transform-origin: top left;
+  -webkit-transform-origin: top left;
+  -o-transform-origin: top left;
+  -ms-transform-origin: top left;
+  -moz-transform-origin: top left;
+}
+
 .menuSite {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-/*  Contact  */
-.m-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 1.5em;
-}
-
-/*   Roadmap   */
-#roadmap,
-#evolution {
-  margin-top: 5em;
-  background: #af92f2;
-  border-radius: 25px;
-}
-
-caption {
-  padding: 10px;
-  caption-side: top;
-  font-size: 22px;
-  font-weight: 700;
-  font-style: italic;
-  color: darkblue;
-  text-decoration: underline;
-  border: 2px solid dodgerblue;
-  border-bottom: initial;
-}
-
-td,
-th {
-  border: 1px dashed blue;
-  border-top: initial;
-}
-
-tr {
-  border: 2px solid dodgerblue;
-}
-
-aside {
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 2em;
-  border-radius: 1em;
-  border-radius: 2px solid;
+  margin-left: 8em;
+  margin-right: 8em;
 }
 /*# sourceMappingURL=style.css.map */

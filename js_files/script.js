@@ -1,52 +1,35 @@
-var body = document.getElementsByTagName('body')[0];
-        var dark_theme_class = 'dark-theme';
-        var theme = getCookie('theme');
+// Modal Image Gallery
+function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+  
+  // Change style of navbar on scroll
+  window.onscroll = function() {myFunction()};
+  function myFunction() {
+      var navbar = document.getElementById("myNavbar");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+      } else {
+          navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+      }
+  }
+  
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function toggleFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+      } else {
+          x.className = x.className.replace(" w3-show", "");
+      }
+  }
 
-        if(theme != '') {
-            body.classList.add(theme);
-        }
-
-        document.addEventListener('DOMContentLoaded', function () {
-            $('#theme-toggle').on('click', function () {
-        
-                if (body.classList.contains(dark_theme_class)) {
-                    body.classList.remove(dark_theme_class);
-                    $('#mode').text('Light Mode')
-                    setCookie('theme', 'light');
-                }
-                else {
-                
-                    $('#mode').text('Dark Mode')
-                    body.classList.add(dark_theme_class);
-                    setCookie('theme', 'dark-theme');
-                }
-
-            });
-        });
-
-        // enregistrement du theme dans le cookie
-        function setCookie(name, value) {
-            var d = new Date();
-            d.setTime(d.getTime() + (365*24*60*60*1000));
-            var expires = "expires=" + d.toUTCString();
-            console.log(expires)
-            document.cookie = name + "=" + value + ";" + expires + ";path=/";
-            console.log(document.cookie)
-        }
-
-        // methode de recuperation du theme dans le cookie
-        function getCookie(cname) {
-            var theme = cname + "=";
-            var decodedCookie = decodeURIComponent(document.cookie);
-            var ca = decodedCookie.split(';');
-            for(var i = 0; i < ca.length; i++) {
-                var c = ca[i];
-                while (c.charAt(0) == ' ') {
-                    c = c.substring(1);
-                }
-                if (c.indexOf(theme) == 0) {
-                    return c.substring(theme.length, c.length);
-                }
-            }
-            return "";
-        }
+  function scrollToTop() {
+      window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+      })
+  }
