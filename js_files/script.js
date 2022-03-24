@@ -1,7 +1,7 @@
 const url1 = "http://gat-orane/"
 const url2 = "https://picsum.photos/"
-const url3 = "http://evaluation-01/"
-const url4 = "http://192.168.1.56:5502/"
+const url3 = "http://lowly.fr.nf/"
+const url4 = "https://jacekjeznach.com/"
 
 
 
