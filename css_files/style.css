@@ -22,71 +22,83 @@ html {
 
 body,
 html {
+  font-size: 16px;
   height: 100%;
   max-height: 1600px;
-  color: #777;
+  color: #330000;
   line-height: 1.8;
-  background: whitesmoke;
+}
+
+.title {
+  height: 3.5em;
+  text-decoration: underline;
+  text-align: left;
+  margin-left: 20%;
+  margin-bottom: 2em;
+  color: maroon;
+}
+
+.bg-antique {
+  background-color: #faebd7;
+}
+
+.bg-wheat {
+  background-color: #f5deb3;
 }
 
 .scroll {
   position: fixed;
-  right: 2em;
-  top: 1em;
+  right: 5%;
+  bottom: 2em;
 }
 
-/* Create a Parallax Effect */
 header {
-  border: 1px solid;
+  border: 2px solid;
+  border-radius: 15px 15px 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 section {
   padding-top: 3.5em;
   padding-bottom: 4em;
+  border: 1px solid #777;
 }
 
-.bgimg {
+.bandeau {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: wheat;
 }
 
-h3 {
-  color: dimgray;
-}
-
-.about {
-  background-color: antiquewhite;
+.bandeau img {
+  max-width: 100%;
+  height: auto;
 }
 
 .about h1 {
-  color: dimgray;
+  color: maroon;
   text-align: justify;
   padding-left: 4em;
-  font-weight: 600;
+  font-size: 2.5em;
+  font-weight: 700;
 }
 
 .about p {
+  margin-top: 2em;
+  font-size: 1.2em;
   padding-left: 4.5em;
   padding-right: 4.5em;
 }
 
-.title {
-  text-align: center;
-  padding-bottom: 1em;
-}
-
 .hello {
-  background-color: wheat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,55 +106,40 @@ h3 {
       justify-content: space-around;
 }
 
-.hello .title {
-  text-align: center;
-  padding-bottom: 1em;
+.hello p {
+  text-align: left;
+}
+
+.avatar img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+/* ------------------- */
+.hello {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .hello p {
   text-align: justify;
 }
 
-.level {
-  background-color: antiquewhite;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .portfolio {
-  background-color: wheat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.contact {
-  background-color: antiquewhite;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.evolution {
-  background-color: antiquewhite;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 footer {
-  background-color: wheat;
   height: 150px;
   text-align: center;
 }
@@ -202,5 +199,34 @@ iframe {
   -o-transform-origin: top left;
   -ms-transform-origin: top left;
   -moz-transform-origin: top left;
+}
+
+.block_parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 10em;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: 1px solid white;
+  padding: 1em;
+  margin: 1em;
 }
 /*# sourceMappingURL=style.css.map */
