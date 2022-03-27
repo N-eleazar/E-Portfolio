@@ -2063,7 +2063,6 @@ textarea.form-control-lg {
 }
 .form-check-input:disabled {
   pointer-events: none;
-  filter: ;
   opacity: 0.5;
 }
 .form-check-input:disabled ~ .form-check-label,
@@ -2105,7 +2104,6 @@ textarea.form-control-lg {
 .btn-check:disabled + .btn,
 .btn-check[disabled] + .btn {
   pointer-events: none;
-  filter: ;
   opacity: 0.65;
 }
 .form-range {
