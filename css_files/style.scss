@@ -51,13 +51,6 @@ html {
   bottom: 0.5em;
 }
 
-.row {
-  border: 1px solid red;
-}
-.col {
-  border: 1px solid blue;
-}
-
 /* Create a Parallax Effect */
 header {
   border: 2px solid;
@@ -79,6 +72,14 @@ section {
 
 .bg-02 {
   background-color: $bg2-Color;
+}
+
+.title {
+  text-align: left;
+  margin-left: 25em;
+  padding-bottom: 1em;
+  text-decoration: underline;
+  color: maroon;
 }
 
 .bandeau {
@@ -113,13 +114,7 @@ section {
 .hello {
   display: flex;
   justify-content: space-around;
-  .title {
-    text-align: left;
-    margin-left: 25em;
-    padding-bottom: 1em;
-    text-decoration: underline;
-    color: darken($titleColor, 25%);
-  }
+
   .avatar {
     width: auto;
     height: 100%;
@@ -139,25 +134,11 @@ section {
 .level-front {
   display: flex;
   justify-content: center;
-  .title {
-    text-align: left;
-    margin-left: 25em;
-    padding-bottom: 1em;
-    text-decoration: underline;
-    color: darken($titleColor, 25%);
-  }
 }
 
 .level-back {
   display: flex;
   justify-content: center;
-  .title {
-    text-align: left;
-    margin-left: 25em;
-    padding-bottom: 1em;
-    text-decoration: underline;
-    color: darken($titleColor, 25%);
-  }
 }
 .parcours-wrapper {
   display: flex;
@@ -176,32 +157,17 @@ section {
   font-size: 0.6em;
   display: flex;
   flex-direction: column;
+  border: 1px solid whitesmoke;
+  background-color: $bg3-Color;
+
   .panel-heading {
     height: 60%;
   }
 }
 
-.panel-front {
-  border: 1px solid whitesmoke;
-  background-color: $bg3-Color;
-}
-
-.panel-back {
-  border: 1px solid whitesmoke;
-  background-color: $bg3-Color;
-}
-
 .portfolio {
-  background-color: wheat;
   display: flex;
   justify-content: center;
-  .title {
-    text-align: left;
-    margin-left: 25em;
-    padding-bottom: 1em;
-    text-decoration: underline;
-    color: darken($titleColor, 25%);
-  }
 }
 .display {
   position: relative;
@@ -256,21 +222,12 @@ iframe {
 }
 
 .contact {
-  background-color: antiquewhite;
   display: flex;
   justify-content: space-around;
-  .title {
-    text-align: left;
-    margin-left: 25em;
-    padding-bottom: 1em;
-    text-decoration: underline;
-    color: darken($titleColor, 25%);
-  }
 }
 /* ---------- */
 
 footer {
-  background-color: wheat;
   height: 150px;
   text-align: center;
 }
