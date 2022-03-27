@@ -1,3 +1,9 @@
+$bg1-Color: wheat;
+$bg2-Color: antiquewhite;
+$bg3-Color: darken(wheat, 10%);
+$titleColor: red;
+$textColor: darken(grey, 25%);
+
 /* latin-ext */
 @font-face {
   font-family: "Lato";
@@ -26,115 +32,192 @@ html {
 
 body,
 html {
+  font-size: 16px;
   height: 100%;
   max-height: 1600px;
-  color: #777;
   line-height: 1.8;
+  color: darken($textColor, 25%);
   background: whitesmoke;
 }
 
 .scroll {
   position: fixed;
   right: 2em;
-  top: 1em;
+  bottom: 2.5em;
+}
+.resolution {
+  position: fixed;
+  right: 2em;
+  bottom: 0.5em;
+}
+
+.row {
+  border: 1px solid red;
+}
+.col {
+  border: 1px solid blue;
 }
 
 /* Create a Parallax Effect */
 header {
-  border: 1px solid;
+  border: 2px solid;
+  border-radius: 15px 15px 0 0;
   display: flex;
   justify-content: space-around;
 }
 
 section {
-  padding-top: 3.5em;
-  padding-bottom: 4em;
+  border: 1px solid white;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  min-height: 500px;
 }
 
-.bgimg {
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: wheat;
+.bg-01 {
+  background-color: $bg1-Color;
 }
 
-h3 {
-  color: darken(darkgrey, 25%);
+.bg-02 {
+  background-color: $bg2-Color;
 }
+
+.bandeau {
+  display: block;
+  height: auto;
+  float: left;
+  border-style: solid;
+  background-size: 100% 100%;
+  background-color: #000;
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+}
+
 .about {
-  background-color: antiquewhite;
+  padding: 1.5em;
   h1 {
-    color: darken(darkgrey, 25%);
+    color: darken($titleColor, 25%);
     text-align: justify;
-    padding-left: 4em;
+    margin-left: 4em;
     font-weight: 600;
   }
   p {
-    padding-left: 4.5em;
-    padding-right: 4.5em;
+    font-size: 1.1em;
+    margin: 3.5em;
+    color: $textColor;
   }
-}
-
-.title {
-  text-align: center;
-  padding-bottom: 1em;
 }
 
 .hello {
-  background-color: wheat;
   display: flex;
   justify-content: space-around;
   .title {
-    text-align: center;
+    text-align: left;
+    margin-left: 25em;
     padding-bottom: 1em;
+    text-decoration: underline;
+    color: darken($titleColor, 25%);
+  }
+  .avatar {
+    width: auto;
+    height: 100%;
+    position: relative;
+    left: 3em;
+    margin-bottom: 1.5em;
   }
   p {
+    position: relative;
+    right: 3.6em;
+    color: $textColor;
     text-align: justify;
+    margin: 1.8em;
   }
 }
 
-.level {
-  background-color: antiquewhite;
+.level-front {
   display: flex;
   justify-content: center;
+  .title {
+    text-align: left;
+    margin-left: 25em;
+    padding-bottom: 1em;
+    text-decoration: underline;
+    color: darken($titleColor, 25%);
+  }
+}
+
+.level-back {
+  display: flex;
+  justify-content: center;
+  .title {
+    text-align: left;
+    margin-left: 25em;
+    padding-bottom: 1em;
+    text-decoration: underline;
+    color: darken($titleColor, 25%);
+  }
+}
+.parcours-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  justify-content: flex-start;
+  margin-left: 5em;
+}
+
+.panel {
+  width: 200px;
+  height: 200px;
+  padding: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  font-size: 0.6em;
+  display: flex;
+  flex-direction: column;
+  .panel-heading {
+    height: 60%;
+  }
+}
+
+.panel-front {
+  border: 1px solid whitesmoke;
+  background-color: $bg3-Color;
+}
+
+.panel-back {
+  border: 1px solid whitesmoke;
+  background-color: $bg3-Color;
 }
 
 .portfolio {
   background-color: wheat;
   display: flex;
   justify-content: center;
+  .title {
+    text-align: left;
+    margin-left: 25em;
+    padding-bottom: 1em;
+    text-decoration: underline;
+    color: darken($titleColor, 25%);
+  }
 }
-
-.contact {
-  background-color: antiquewhite;
-  display: flex;
-  justify-content: space-around;
-}
-
-.evolution {
-  background-color: antiquewhite;
-  display: flex;
-  justify-content: space-around;
-}
-
-footer {
-  background-color: wheat;
-  height: 150px;
-  text-align: center;
-}
-form {
-  border-radius: 5px;
-  padding: 0 2rem;
-  width: 25rem;
-}
-
 .display {
   position: relative;
-  left: 0px;
   height: 600px;
+}
+.desktop {
+  position: absolute;
+  width: 566px;
+  height: 538px;
+  background-image: url("http://ami.responsivedesign.is/images/large-screen-optimised.png");
+  top: 0px;
+  left: 25%;
+}
+.menuSite {
+  position: relative;
+  left: 18em;
 }
 
 iframe {
@@ -155,15 +238,6 @@ iframe {
   border-color: #000;
 }
 
-.desktop {
-  position: absolute;
-  width: 566px;
-  height: 538px;
-  background-image: url("http://ami.responsivedesign.is/images/large-screen-optimised.png");
-  top: 0px;
-  left: 30%;
-  z-index: 1;
-}
 .desktop iframe {
   left: 28px;
   top: 38px;
@@ -179,4 +253,29 @@ iframe {
   -o-transform-origin: top left;
   -ms-transform-origin: top left;
   -moz-transform-origin: top left;
+}
+
+.contact {
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: space-around;
+  .title {
+    text-align: left;
+    margin-left: 25em;
+    padding-bottom: 1em;
+    text-decoration: underline;
+    color: darken($titleColor, 25%);
+  }
+}
+/* ---------- */
+
+footer {
+  background-color: wheat;
+  height: 150px;
+  text-align: center;
+}
+form {
+  border-radius: 5px;
+  padding: 0 2rem;
+  width: 25rem;
 }
