@@ -1,7 +1,12 @@
-const button = document.getElementById('scrollTop')
+/**  --  **/
+const button = document.getElementById('button')
 
-function evenement() {
-  alert('BUTTON')
-}
+button.addEventListener('click', () => {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0;
+  behavior: 'smooth'
+})
 
-button.addEventListener('click', evenement)
+
+/**  --  **/
+windows.addEventListener('load', function (event) {console.log("Tout est bien chargé")});
