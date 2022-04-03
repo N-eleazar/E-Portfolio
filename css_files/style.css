@@ -27,7 +27,7 @@ html {
   max-height: 1600px;
   line-height: 1.8;
   color: #010101;
-  background: whitesmoke;
+  background: grey;
 }
 
 .scroll {
@@ -42,14 +42,6 @@ html {
   bottom: 0.5em;
 }
 
-.row {
-  border: 1px solid red;
-}
-
-.col {
-  border: 1px solid blue;
-}
-
 /* Create a Parallax Effect */
 header {
   border: 2px solid;
@@ -62,10 +54,10 @@ header {
 }
 
 section {
-  border: 1px solid white;
+  border: 1px solid;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
-  min-height: 500px;
+  min-height: 200px;
 }
 
 .bg-01 {
@@ -74,6 +66,14 @@ section {
 
 .bg-02 {
   background-color: antiquewhite;
+}
+
+.title {
+  text-align: left;
+  margin-left: 25em;
+  padding-bottom: 1em;
+  text-decoration: underline;
+  color: maroon;
 }
 
 .bandeau {
@@ -116,14 +116,6 @@ section {
       justify-content: space-around;
 }
 
-.hello .title {
-  text-align: left;
-  margin-left: 25em;
-  padding-bottom: 1em;
-  text-decoration: underline;
-  color: maroon;
-}
-
 .hello .avatar {
   width: auto;
   height: 100%;
@@ -149,14 +141,6 @@ section {
           justify-content: center;
 }
 
-.level-front .title {
-  text-align: left;
-  margin-left: 25em;
-  padding-bottom: 1em;
-  text-decoration: underline;
-  color: maroon;
-}
-
 .level-back {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -164,14 +148,6 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.level-back .title {
-  text-align: left;
-  margin-left: 25em;
-  padding-bottom: 1em;
-  text-decoration: underline;
-  color: maroon;
 }
 
 .parcours-wrapper {
@@ -191,11 +167,10 @@ section {
 
 .panel {
   width: 200px;
-  height: 200px;
+  height: 150px;
   padding: 1em;
   margin-right: 1em;
   margin-bottom: 1em;
-  font-size: 0.6em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -203,38 +178,25 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border: 1px solid whitesmoke;
+  background-color: #efca86;
 }
 
 .panel .panel-heading {
   height: 60%;
 }
 
-.panel-front {
-  border: 1px solid whitesmoke;
-  background-color: #efca86;
-}
-
-.panel-back {
-  border: 1px solid whitesmoke;
-  background-color: #efca86;
+.panel .panel-heading h4 {
+  font-size: 1em;
 }
 
 .portfolio {
-  background-color: wheat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.portfolio .title {
-  text-align: left;
-  margin-left: 25em;
-  padding-bottom: 1em;
-  text-decoration: underline;
-  color: maroon;
 }
 
 .display {
@@ -292,7 +254,6 @@ iframe {
 }
 
 .contact {
-  background-color: antiquewhite;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -300,19 +261,17 @@ iframe {
       justify-content: space-around;
 }
 
-.contact .title {
-  text-align: left;
-  margin-left: 25em;
-  padding-bottom: 1em;
-  text-decoration: underline;
-  color: maroon;
-}
-
 /* ---------- */
 footer {
-  background-color: wheat;
-  height: 150px;
+  height: 80px;
   text-align: center;
+  border: 2px solid;
+  border-radius: 0 0 15px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 form {
