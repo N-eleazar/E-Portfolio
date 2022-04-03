@@ -12,15 +12,14 @@
   <link rel="stylesheet" href="css_files/style.css">
  
 </head>
-
+<!-- TODO tester le code pour preversion-->
 <body>
   <div class="container">
    
     <!--   ScrollTop btn -->
     <div class="col col-2">
-      <button type="button" id="button" class="scroll btn-secondary">Scroll Top</button>
+      <button type="button" id="button" class="scroll btn btn-primary">Scroll Top</button>
     </div>
-
     <!--   Header / Navbar  -->
     <header class="row">
       <div class="col col-10">
@@ -82,204 +81,72 @@
       </div>
     </section>
   
+
+    <?php require_once 'valeurs.php'; ?>
     <!--   Mon Niveau Front  -->
     <section class="row level-front bg-02" id="level">
       <div class="title"><h3>Mes Compétences Front</h3></div>
       <div class="parcours-wrapper">
-        
+      <?php
+        $count = count($frontEnd);
+        for ($i = 0; $i < $count; $i++) {
+      ?>
         <div class="panel panel-front col-lg-3 col-md-4 col-sm-6 col-xs-12">
           <div class="panel-heading">
-            <h4>Créer un site web avec HTML, CSS et le Framework Bootstrap</h4>
+            <h4><?php echo $frontEnd[$i][0];?></h4>
           </div>
           <div class="panel-body">
             <div class="panel-body-img"></div>
           </div><hr>
           <div class="panel-module-footer">
             <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+              <div class="progress-bar progress-bar-striped progress-bar-animated <?php echo $frontEnd[$i][1];?>" 
+                role="progressbar" 
+                aria-valuenow="<?php echo $frontEnd[$i][2];?>" 
+                aria-valuemin="0" 
+                aria-valuemax="100" 
+                style="width: <?php echo $frontEnd[$i][2];?>"></div>
             </div>
           </div>
         </div>
-          
-        <div class="panel panel-front col-lg-3 col-md-4 col-sm-6 col-xs-12">
-          <div class="panel-heading">
-            <h4>S'initier à la programmation avec Javascript</h4>
-          </div>
-          <div class="panel-body">
-            <div class="panel-body-img"></div>
-          </div><hr>
-          <div class="panel-module-footer">
-            <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
-            </div>
-          </div>
-        </div>
-            
-        <div class="panel panel-front col-lg-3 col-md-4 col-sm-6 col-xs-12">
-          <div class="panel-heading">
-            <h4>Dynamiser vos sites web avec Javascript</h4>
-          </div>
-          <div class="panel-body">
-            <div class="panel-body-img"></div>
-          </div><hr>
-          <div class="panel-module-footer">
-            <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 05%"></div>
-            </div>
-          </div>
-        </div>
-  
-        <div class="panel panel-front col-lg-3 col-md-4 col-sm-6 col-xs-12">
-          <div class="panel-heading">
-            <h4>Utiliser Git et Github pour gérer son code source</h4>
-          </div>
-          <div class="panel-body">
-            <div class="panel-body-img"></div>
-          </div><hr>
-          <div class="panel-module-footer">
-            <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
-            </div>
-          </div>
-        </div>
-  
-        <div class="panel panel-front col-lg-3 col-md-4 col-sm-6 col-xs-12">
-          <div class="panel-heading">
-            <h4>Réaliser la maquette d'une application web responsive</h4>
-          </div>
-          <div class="panel-body">
-            <div class="panel-body-img"></div>
-          </div><hr>
-          <div class="panel-module-footer">
-            <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 05%"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="panel panel-front col-lg-3 col-md-4 col-sm-6 col-xs-12">
-          <div class="panel-heading">
-            <h4>Créer un site web avec le CMS Wordpress</h4>
-          </div>
-          <div class="panel-body">
-            <div class="panel-body-img"></div>
-          </div><hr>
-          <div class="panel-module-footer">
-            <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 05%"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="panel panel-front col-lg-3 col-md-4 col-sm-6 col-xs-12">
-          <div class="panel-heading">
-            <h4>Développer une application web avec React.js</h4>
-          </div>
-          <div class="panel-body">
-            <div class="panel-body-img"></div>
-          </div><hr>
-          <div class="panel-module-footer">
-            <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 05%"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="panel panel-front col-lg-3 col-md-4 col-sm-6 col-xs-12">
-          <div class="panel-heading">
-            <h4>Déployer son application web avec Heroku</h4>
-          </div>
-          <div class="panel-body">
-            <div class="panel-body-img"></div>
-          </div><hr>
-          <div class="panel-module-footer">
-            <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 05%"></div>
-            </div>
-          </div>
-        </div>
+        <?php
+            }
+        ?>
       </div>
     </section>
 
     <!--   Mon Niveau Back  -->
-    <section class="row level-back bg-01">
+    <section class="row level-back bg-01" id="level">
       <div class="title"><h3>Mes Compétences Back</h3></div>
       <div class="parcours-wrapper">
-        
-        <div class="panel panel-back col-lg-3 col-md-4 col-sm-6 col-xs-12">
+      <?php
+        $count = count($backEnd);
+        for ($i = 0; $i < $count; $i++) {
+      ?>
+        <div class="panel panel-front col-lg-3 col-md-4 col-sm-6 col-xs-12">
           <div class="panel-heading">
-            <h4>Développer des sites web dynamiques avec PHP</h4>
+            <h4><?php echo $backEnd[$i][0];?></h4>
           </div>
           <div class="panel-body">
             <div class="panel-body-img"></div>
           </div><hr>
           <div class="panel-module-footer">
             <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 05%"></div>
+              <div class="progress-bar progress-bar-striped progress-bar-animated <?php echo $frontEnd[$i][1];?>" 
+                role="progressbar" 
+                aria-valuenow="<?php echo $backEnd[$i][2];?>" 
+                aria-valuemin="0" 
+                aria-valuemax="100" 
+                style="width: <?php echo $backEnd[$i][2];?>"></div>
             </div>
           </div>
         </div>
-          
-        <div class="panel panel-back col-lg-3 col-md-4 col-sm-6 col-xs-12">
-          <div class="panel-heading">
-            <h4>Créer une application web avec le framework Symfony</h4>
-          </div>
-          <div class="panel-body">
-            <div class="panel-body-img"></div>
-          </div><hr>
-          <div class="panel-module-footer">
-            <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 05%"></div>
-            </div>
-          </div>
-        </div>
-            
-        <div class="panel panel-back col-lg-3 col-md-4 col-sm-6 col-xs-12">
-          <div class="panel-heading">
-            <h4>Créer et administrer une base de données</h4>
-          </div>
-          <div class="panel-body">
-            <div class="panel-body-img"></div>
-          </div><hr>
-          <div class="panel-module-footer">
-            <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 05%"></div>
-            </div>
-          </div>
-        </div>
-  
-        <div class="panel panel-back col-lg-3 col-md-4 col-sm-6 col-xs-12">
-          <div class="panel-heading">
-            <h4>Développer une application mobile avec React Native</h4>
-          </div>
-          <div class="panel-body">
-            <div class="panel-body-img"></div>
-          </div><hr>
-          <div class="panel-module-footer">
-            <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 05%"></div>
-            </div>
-          </div>
-        </div>
-  
-        <div class="panel panel-back col-lg-3 col-md-4 col-sm-6 col-xs-12">
-          <div class="panel-heading">
-            <h4>Créer un plugin Wordpress</h4>
-          </div>
-          <div class="panel-body">
-            <div class="panel-body-img"></div>
-          </div><hr>
-          <div class="panel-module-footer">
-            <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 05%"></div>
-            </div>
-          </div>
-        </div>
-
-      
+        <?php
+            }
+        ?>
       </div>
     </section>
-
+ 
     <!--   Portfolio   -->
     <section class="row portfolio bg-02" id="portfolio">
       <div class="title"><h3>Mes Réalisations</h3></div>
@@ -331,10 +198,14 @@
     <footer class="bg-02">
       <p class="copyright">Company Name © 2021</p>
     </footer>
+    
  </div>
 
   <!--  JS Files  -->
   <script src="js_files/scrollTop.js"></script>
   <script src="js_files/responsiv.js"></script>
+  <noscript>
+    <p>Merci d'activer JavaScript afin de pouvoir bénéficier de toutes les fonctionnalités de notre site.</p>
+  </noscript>
 </body>
 </html>

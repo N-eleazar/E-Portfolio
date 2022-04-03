@@ -167,11 +167,10 @@ section {
 
 .panel {
   width: 200px;
-  height: 200px;
+  height: 150px;
   padding: 1em;
   margin-right: 1em;
   margin-bottom: 1em;
-  font-size: 0.6em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -185,6 +184,10 @@ section {
 
 .panel .panel-heading {
   height: 60%;
+}
+
+.panel .panel-heading h4 {
+  font-size: 1em;
 }
 
 .portfolio {
