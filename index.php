@@ -74,7 +74,7 @@ include 'include/header.html';
       </div><hr>
       <div class="panel-module-footer">
         <div class="progress">
-          <div class="progress-bar progress-bar-striped progress-bar-animated <?php echo $frontEnd[$i][1];?>" 
+          <div class="progress-bar progress-bar-striped progress-bar-animated <?php echo $backEnd[$i][1];?>" 
             role="progressbar" 
             aria-valuenow="<?php echo $backEnd[$i][2];?>" 
             aria-valuemin="0" 

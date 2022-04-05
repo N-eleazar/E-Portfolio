@@ -1,13 +1,7 @@
-
-
-
 // Fonction de Recup et Affichage Résolution Ecran 
 function getResolution() {
   alert("Votre résolution d'écran est: " + screen.width + "x" + screen.height);
 }
-
-
-
 
 // Modal Image Gallery
 function onClick(element) {
@@ -37,5 +31,3 @@ function toggleFunction() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
-
- 
