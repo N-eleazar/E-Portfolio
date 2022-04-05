@@ -7,6 +7,11 @@ button.addEventListener('click', () => {
   behavior: 'smooth'
 })
 
+/**  Message après chgargement complète de page  **/
+window.addEventListener('load', () => {
+  console.log("Tout est bien chargé")
+});
 
-/**  --  **/
-windows.addEventListener('load', function (event) {console.log("Tout est bien chargé")});
+window.addEventListener('load', () => {
+  alert("Veuillez acceptez les cookies !")
+});
