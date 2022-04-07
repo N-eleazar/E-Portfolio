@@ -99,11 +99,11 @@ include 'include/header.html';
      </div>
     </div>
     <div class="menuSite">
-      <button type="button" id="respBtn1" class="btn btn-secondary">Gat'Orane</button>
-      <button type="button" id="respBtn2" class="btn btn-secondary">Lorem Photo</button>
-      <button type="button" id="respBtn3" class="btn btn-secondary">Lowly</button>
-      <button type="button" id="respBtn4" class="btn btn-secondary">Jacekjeznach</button>
-      <button type="button" id="respBtn5" class="btn btn-secondary">PortFolo</button>
+      <button type="button" id="respBtn1" class="btn btn-secondary" onClick="displayProject('site1')">Portfolio</button>
+      <button type="button" id="respBtn2" class="btn btn-secondary" onClick="displayProject('site2')">Cristal{ID}</button>
+      <button type="button" id="respBtn3" class="btn btn-secondary" onClick="displayProject('site3')">Jacek jeznach</button>
+      <button type="button" id="respBtn4" class="btn btn-secondary" onClick="displayProject('site4')">Lorem Photos</button>
+      <button type="button" id="respBtn5" class="btn btn-secondary" onClick="displayProject('site5')"></button>
     </div>
   </div>
 </section>

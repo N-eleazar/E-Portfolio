@@ -1,55 +1,46 @@
-const url1 = "http://gat-orane/"
-const url2 = "https://picsum.photos/"
-const url3 = "http://lowly.fr.nf/"
-const url4 = "https://jacekjeznach.com/"
-const url5 = "http://127.0.0.1:5500/home/"
+const url1 = "http://eleazarnabet-portfolio.herokuapp.com/"
+const url2 = "https://cristalid.fr/"
+const url3 = "https://jacekjeznach.com/"
+const url4 = "https://picsum.photos/"
 
 
-// Affichage sur Responviv du site par clic 
+// recuperer valeur bouton appuyé
 function displayProject(btnId) {
 switch(btnId) {
   case "site1":
     document.getElementById("desktop").src = url1
-    document.getElementById('btn1').className = "btn-info"
-    document.getElementById('btn2').className = "btn-secondary"
-    document.getElementById('btn3').className = "btn-secondary"
-    document.getElementById('btn4').className = "btn-secondary"
-    document.getElementById('btn5').className = "btn-secondary"
+    document.getElementById('btn1').className = "btn btn-info"
+    document.getElementById('btn2').className = "btn btn-primary"
+    document.getElementById('btn3').className = "btn btn-primary"
+    document.getElementById('btn4').className = "btn btn-primary"
     break;
 
   case "site2":
     document.getElementById("desktop").src = url2
-    document.getElementById('btn1').className = "btn-secondary"
-    document.getElementById('btn2').className = "btn-info" 
-    document.getElementById('btn3').className = "btn-secondary"
-    document.getElementById('btn4').className = "btn-secondary"
-    document.getElementById('btn5').className = "btn-secondary"
+    document.getElementById('btn1').className = "btn btn-primary"
+    document.getElementById('btn2').className = "btn btn-info" 
+    document.getElementById('btn3').className = "btn btn-primary"
+    document.getElementById('btn4').className = "btn btn-primary"
     break;
 
   case "site3":
     document.getElementById("desktop").src = url3
-    document.getElementById('btn1').className = "btn-secondary"
-    document.getElementById('btn2').className = "btn-secondary"
-    document.getElementById('btn3').className = "btn-info"
-    document.getElementById('btn4').className = "btn-secondary"
-    document.getElementById('btn5').className = "btn-secondary"
+    document.getElementById('btn1').className = "btn btn-primary"
+    document.getElementById('btn2').className = "btn btn-primary"
+    document.getElementById('btn3').className = "btn btn-info"
+    document.getElementById('btn4').className = "btn btn-primary"
     break; 
 
   case "site4":
     document.getElementById("desktop").src = url4
-    document.getElementById('btn1').className = "btn-secondary"
-    document.getElementById('btn2').className = "btn-secondary"
-    document.getElementById('btn3').className = "btn-secondary"
-    document.getElementById('btn4').className = "btn-info"
-    document.getElementById('btn5').className = "btn-secondary"
+    document.getElementById("tablet").src = url4
+    document.getElementById("mobile").src = url4
+    document.getElementById("laptop").src = url4
+    document.getElementById('btn1').className = "btn btn-primary"
+    document.getElementById('btn2').className = "btn btn-primary"
+    document.getElementById('btn3').className = "btn btn-primary"
+    document.getElementById('btn4').className = "btn btn-info"
     break;
-  case "site5":
-    document.getElementById("desktop").src = url5
-    document.getElementById('btn1').className = "btn-secondary"
-    document.getElementById('btn2').className = "btn-secondary"
-    document.getElementById('btn3').className = "btn-secondary"
-    document.getElementById('btn4').className = "btn-secondary"
-    document.getElementById('btn5').className = "btn-info"
-    break;
+
 }
 }
