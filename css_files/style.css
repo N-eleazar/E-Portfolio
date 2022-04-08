@@ -31,6 +31,9 @@ html {
 }
 
 .scroll {
+  background-color: #fff;
+  border-radius: 15px;
+  border: 1px solid;
   position: fixed;
   right: 2em;
   bottom: 2.5em;

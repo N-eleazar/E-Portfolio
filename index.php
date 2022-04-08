@@ -14,7 +14,7 @@
   <div class="container">
 
   <div class="row scroll">
-    <button>
+    <button id="button" class="btn">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpdcxsvPPKURZ6p6c1AcRSKa5uxKHXlluE3w&usqp=CAU" 
       alt="bouton Scroll Top"
       width="40px">
@@ -22,7 +22,7 @@
   </div>
 
 
-  <hr>header
+  <!-- <hr>header -->
   <header class="row bg-02">
     <div class="col col-10">
       <nav class="navbar navbar-expand-lg navbar-light bg-02">
@@ -56,13 +56,13 @@
   </header>
 
 
-  <hr> Bandeau
+  <!-- <hr> Bandeau -->
   <div class="row bandeau bg-01">   
     <img src="https://cdn.infosec-ups.com/media/Solutions/02-reseaux-et-serveurs/01-environnement-virtuel/header-env-virtuel-2220x680px72dpi.jpg" alt="">
   </div>
 
 
-  <hr>A Propos
+  <!-- <hr>A Propos -->
   <section class="row about bg-02" id="about">   
     <div class="col">
       <h1>Hello,<br>
@@ -74,7 +74,7 @@
   </section> 
 
 
-  <hr>PRESENTATION
+  <!-- <hr>PRESENTATION -->
   <section class="row hello bg-01" id="myself">
     <!-- <div class="title"><h3>Présentation</h3></div> -->
     <div class="col avatar">
@@ -86,7 +86,7 @@
   </section>
 
 
-  <hr> Front end 
+  <!-- <hr> Front end  -->
   <section class="row level-front bg-02" id="level">
     <!-- <div class="title"><h3>Mes Compétences Front</h3></div> -->
     <div class="parcours-wrapper">
@@ -120,7 +120,7 @@
   </section>
 
   
-  <hr>Back end
+  <!-- <hr>Back end -->
   <section class="row level-back bg-01" id="level">
     <!-- <div class="title"><h3>Mes Compétences Back</h3></div> -->
     <div class="parcours-wrapper">
@@ -152,7 +152,7 @@
     </div>
   </section>
 
-  <hr>PortFolio
+  <!-- <hr>PortFolio -->
   <section class="row portfolio bg-02" id="portfolio">
     <!-- <div class="title"><h3>Mes Réalisations</h3></div> -->
     <div class="col">
@@ -173,7 +173,7 @@
   </section>
   
   
-  <hr> Contacts
+  <!-- <hr> Contacts -->
   <section class="row contact bg-01" id="contact">
     <div class="title"><h3>Me Contacter</h3></div>
     <div class="col col-4">
@@ -200,7 +200,7 @@
     </div>
   </section>
 
-  <hr> Footer
+  <!-- <hr> Footer -->
   <footer class="row bg-02">
     <p class="copyright">Company Name © 2021</p>
   </footer>
