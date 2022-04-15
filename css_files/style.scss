@@ -145,11 +145,9 @@ section {
   justify-content: center;
 }
 .parcours-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  justify-content: flex-start;
-  margin-left: 5em;
+  display: grid;
+  grid-template-columns: 
+  repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .panel {
