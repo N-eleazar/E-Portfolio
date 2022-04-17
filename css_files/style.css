@@ -74,10 +74,6 @@ header {
           justify-content: space-between;
 }
 
-.navbar-nav {
-  border: 2pxsolid green;
-}
-
 /* -------- SECTION -------- */
 section {
   border: 1px solid;
