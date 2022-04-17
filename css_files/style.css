@@ -39,13 +39,7 @@ html {
   bottom: 2.5em;
 }
 
-.resolution {
-  position: fixed;
-  right: 2em;
-  bottom: 0.5em;
-}
-
-/* Create a Parallax Effect */
+/* -------- HEADER -------- */
 header {
   border: 2px solid;
   border-radius: 15px 15px 0 0;
@@ -56,6 +50,35 @@ header {
       justify-content: space-around;
 }
 
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* -------- NAVBAR -------- */
+.navbar {
+  font-size: 1.2em;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar-nav {
+  border: 2pxsolid green;
+}
+
+/* -------- SECTION -------- */
 section {
   border: 1px solid;
   padding-top: 1.5em;
@@ -74,7 +97,7 @@ section {
 .title {
   text-align: left;
   margin-left: 25em;
-  padding-bottom: 1em;
+  padding-bottom: 4em;
   text-decoration: underline;
   color: maroon;
 }
