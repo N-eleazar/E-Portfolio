@@ -93,7 +93,7 @@
     <div class="col">
       <h1>Hello,<br>
       Je suis Eléazar<br>
-      Developeur web / Front End.</h1>
+      Développeur web / Front End.</h1>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis exercitationem, sit iure, rem, beatae assumenda molestias nam soluta ad officia aliquam repellendus laboriosam sapiente consequuntur a dignissimos consectetur maxime atque.<br>
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis exercitationem, sit iure, rem, beatae assumenda molestias nam soluta ad officia aliquam repellendus laboriosam sapiente consequuntur a dignissimos consectetur maxime atque.</p>
     </div>
@@ -220,6 +220,7 @@
   </footer>
 </div>    
  <!--  JS Files  -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="js_files/scrollTop.js"></script>
 <script src="js_files/responsiv.js"></script>
   <noscript>
