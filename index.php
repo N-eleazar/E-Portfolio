@@ -93,7 +93,7 @@
     <div class="col">
       <h1>Hello,<br>
       Je suis Eléazar<br>
-      Developeur web / Front End.</h1>
+      Développeur web / Front End.</h1>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis exercitationem, sit iure, rem, beatae assumenda molestias nam soluta ad officia aliquam repellendus laboriosam sapiente consequuntur a dignissimos consectetur maxime atque.<br>
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis exercitationem, sit iure, rem, beatae assumenda molestias nam soluta ad officia aliquam repellendus laboriosam sapiente consequuntur a dignissimos consectetur maxime atque.</p>
     </div>

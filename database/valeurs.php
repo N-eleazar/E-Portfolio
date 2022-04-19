@@ -5,7 +5,7 @@ $frontEnd = [
   ['Créer un site web avec Flexbox et le Framework Bootstrap', 'bg-success', '100%'],
   ['Utiliser Git et Github pour gérer son code source', 'bg-success', '100%'],
   ['Initiation à la programmation avec Javascript', 'bg-success', '100%'],
-  ['Dynamiser vos sites web avec Javascript', 'bg', '32%'],
+  ['Dynamiser vos sites web avec Javascript', 'bg', '45%'],
   ['Réaliser la maquette d\'une application web responsive', 'bg-info', '5%'],
   ['Créer un site web avec le CMS Wordpress', 'bg-info', '5%'],
   ['Développer une application web avec React.js', 'bg-info', '5%'],
