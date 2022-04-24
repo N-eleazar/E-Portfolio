@@ -165,6 +165,13 @@
   <!-- FOOTER -->
   <footer class="row flex text-center justify-around h-32 p-8 bg-02">
     <p class="copyright text-xl">Company Name © 2021</p>
+    <p>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
   </footer>
 </div>    
 
