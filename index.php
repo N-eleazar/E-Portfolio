@@ -99,7 +99,7 @@
               aria-valuenow="<?php echo $frontEnd[$i][2];?>" 
               aria-valuemin="0" 
               aria-valuemax="100" 
-              style="width: <?php echo $frontEnd[$i][2];?>"></div>
+              style="width: <?php echo $frontEnd[$i][2];?>%"></div>
           </div>
         </div>
       </div>
@@ -129,7 +129,7 @@
                   aria-valuenow="<?php echo $backEnd[$i][2];?>" 
                   aria-valuemin="0" 
                   aria-valuemax="100" 
-                  style="width: <?php echo $backEnd[$i][2];?>"></div>
+                  style="width: <?php echo $backEnd[$i][2];?>%"></div>
               </div>
             </div>
           </div>
