@@ -1,8 +1,6 @@
 $bg1-Color: wheat;
 $bg2-Color: antiquewhite;
 $bg3-Color: darken(wheat, 10%);
-$titleColor: red;
-$textColor: darken(grey, 25%);
 
 /* latin-ext */
 @font-face {
@@ -28,41 +26,15 @@ $textColor: darken(grey, 25%);
 
 html {
   scroll-behavior: smooth;
-  
 }
-
 body,
 html {
   font-size: 16px;
   height: 100%;
   max-height: 1600px;
   line-height: 1.8;
-  color: darken($textColor, 25%);
-  background: #000;
 }
-
-.scroll {
-  background-color: #fff;
-  border-radius: 15px;
-  border: 1px solid;
-  position: fixed;
-  right: 2em;
-  bottom: 2.5em;
-}
-
 /* -------- HEADER -------- */
-header {
-  border: 2px solid;
-  border-radius: 15px 15px 0 0;
-  display: flex;
-  justify-content: space-around;
-}
-.logo{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /* -------- NAVBAR -------- */
 .navbar {
   font-size: 1.2em;
@@ -70,87 +42,30 @@ header {
   display: flex;
   justify-content: space-between;
 }
-
 .navbar-nav {
   position: absolute;
   right: 2em;
 }
-
 .btn {
   margin-left: 0.5em;
   margin-right: 0.5em;
   border-radius: 15px;
   color: wheat;
 }
-
-/* -------- CAROUSEL -------- */
-.carousel {
- background-color: #000;
-}
-
 /* -------- SECTION -------- */
 section {
-  border: 1px solid ;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
   min-height: 200px;
 }
-
 .bg-01 {
   background-color: $bg1-Color;
 }
-
 .bg-02 {
   background-color: $bg2-Color;
 }
-
-.title {
-  text-align: left;
-  margin-left: 25em;
-  padding-bottom: 4em;
-  text-decoration: underline;
-  color: maroon;
-}
-
-/* -------- A PROPOS -------- */
-.about {  
-  padding: 1.5em;
-  h1 {
-    color: darken($titleColor, 25%);
-    text-align: center;
-    font-size: 3.5em;
-    font-weight: 600;
-  }
-  p {
-    font-size: 1.2em;
-    margin: 2em;
-    color: $textColor;
-  }
-}
-.myself{
-  img {
-    float: left;
-    padding: 0.5em;
-  }
-  p{
-    margin-right: 0.5em;
-  }
-}
-
+/* -------- A PROPOS -------- */ 
 /* -------- COMPETENCES -------- */
-.level-front {
-  display: flex;
-  justify-content: center;
-}
-.level-back {
-  display: flex;
-  justify-content: center;
-}
-.parcours-wrapper {
-  display: grid;
-  grid-template-columns: 
-  repeat(auto-fit, minmax(200px, 1fr));
-}
 .panel {
   width: 200px;
   height: 150px;
@@ -161,7 +76,6 @@ section {
   flex-direction: column;
   border: 1px solid whitesmoke;
   background-color: $bg3-Color;
-
   .panel-heading {
     height: 60%;
     h4 {
@@ -169,12 +83,7 @@ section {
     }
   }
 }
-
 /* -------- PORTFOLIO -------- */
-.portfolio {
-  display: flex;
-  justify-content: center;
-}
 .display {
   position: relative;
   height: 600px;
@@ -184,14 +93,9 @@ section {
   width: 566px;
   height: 538px;
   background-image: url("../images/large-screen-optimised.png");
-  top: 0px;
+  top: 20px;
   left: 25%;
 }
-.menuSite {
-  position: relative;
-  left: 18em;
-}
-
 iframe {
   transform: scale(0.219);
   -webkit-transform: scale(0.219);
@@ -209,7 +113,6 @@ iframe {
   background-color: #fff;
   border-color: #000;
 }
-
 .desktop iframe {
   left: 28px;
   top: 38px;
@@ -226,25 +129,5 @@ iframe {
   -ms-transform-origin: top left;
   -moz-transform-origin: top left;
 }
-
 /* -------- CONTACT -------- */
-.contact {
-  display: flex;
-  justify-content: space-around;
-}
-/* ---------- */
-
-footer {
-  height: 80px;
-  text-align: center;
-  border: 2px solid;
-  border-radius:  0 0 15px 15px;
-  display: flex;
-  justify-content: space-around;
-
-}
-form {
-  border-radius: 5px;
-  padding: 0 2rem;
-  width: 25rem;
-}
+/* -------- FOOTER -------- */

@@ -26,42 +26,9 @@ html {
   height: 100%;
   max-height: 1600px;
   line-height: 1.8;
-  color: #010101;
-  background: #000;
-}
-
-.scroll {
-  background-color: #fff;
-  border-radius: 15px;
-  border: 1px solid;
-  position: fixed;
-  right: 2em;
-  bottom: 2.5em;
 }
 
 /* -------- HEADER -------- */
-header {
-  border: 2px solid;
-  border-radius: 15px 15px 0 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 /* -------- NAVBAR -------- */
 .navbar {
   font-size: 1.2em;
@@ -86,14 +53,8 @@ header {
   color: wheat;
 }
 
-/* -------- CAROUSEL -------- */
-.carousel {
-  background-color: #000;
-}
-
 /* -------- SECTION -------- */
 section {
-  border: 1px solid;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
   min-height: 200px;
@@ -107,67 +68,8 @@ section {
   background-color: antiquewhite;
 }
 
-.title {
-  text-align: left;
-  margin-left: 25em;
-  padding-bottom: 4em;
-  text-decoration: underline;
-  color: maroon;
-}
-
 /* -------- A PROPOS -------- */
-.about {
-  padding: 1.5em;
-}
-
-.about h1 {
-  color: maroon;
-  text-align: center;
-  font-size: 3.5em;
-  font-weight: 600;
-}
-
-.about p {
-  font-size: 1.2em;
-  margin: 2em;
-  color: #404040;
-}
-
-.myself img {
-  float: left;
-  padding: 0.5em;
-}
-
-.myself p {
-  margin-right: 0.5em;
-}
-
 /* -------- COMPETENCES -------- */
-.level-front {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.level-back {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.parcours-wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-
 .panel {
   width: 200px;
   height: 150px;
@@ -194,15 +96,6 @@ section {
 }
 
 /* -------- PORTFOLIO -------- */
-.portfolio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .display {
   position: relative;
   height: 600px;
@@ -213,13 +106,8 @@ section {
   width: 566px;
   height: 538px;
   background-image: url("../images/large-screen-optimised.png");
-  top: 0px;
+  top: 20px;
   left: 25%;
-}
-
-.menuSite {
-  position: relative;
-  left: 18em;
 }
 
 iframe {
@@ -258,30 +146,5 @@ iframe {
 }
 
 /* -------- CONTACT -------- */
-.contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-/* ---------- */
-footer {
-  height: 80px;
-  text-align: center;
-  border: 2px solid;
-  border-radius: 0 0 15px 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-form {
-  border-radius: 5px;
-  padding: 0 2rem;
-  width: 25rem;
-}
+/* -------- FOOTER -------- */
 /*# sourceMappingURL=style.css.map */
