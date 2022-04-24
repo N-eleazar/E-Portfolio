@@ -1,15 +1,11 @@
 <!doctype html>
 <html lang="fr">
   <head>
-     <!--  Meta Link  -->
-     <meta charset="utf-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <title>PortFolio V.2.0</title>
-     
-    <!-- Required meta tags -->
+    <!--  Meta Link  -->
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <title>PortFolio V.2.0</title>
     <!--  Tailwind CSS  -->
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
@@ -22,7 +18,7 @@
   <div class="container-fluid">
 
     <div class="scroll fixed bottom-5 right-5">
-      <img src="images\scrollTop.png" 
+      <img src="images/scrollTop.png" 
       alt="bouton Scroll Top"
       width="40">
     </div>
