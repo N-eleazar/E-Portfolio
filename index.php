@@ -17,7 +17,7 @@
     
   <div class="container-fluid">
 
-    <div class="scroll fixed bottom-5 right-5">
+    <div class="scroll fixed bottom-5 right-5 z-10">
       <img src="images/scrollTop.png" 
       alt="bouton Scroll Top"
       width="40">
