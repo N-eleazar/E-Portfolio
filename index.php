@@ -2,7 +2,7 @@
 <html lang="fr">
   <head>
      <!--  Meta Link  -->
-     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+     <meta charset="utf-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <title>PortFolio V.2.0</title>
      
@@ -24,7 +24,7 @@
     <div class="scroll fixed bottom-5 right-5">
       <img src="images\scrollTop.png" 
       alt="bouton Scroll Top"
-      width="40px">
+      width="40">
     </div>
 
   <!--  HEADER  -->
@@ -57,11 +57,11 @@
   </header>
 
   <!-- BANDEAU -->
-    <section class="row bg-02">
+    <div class="row bg-02">
       <div class="carousel-item active">
         <img src="images/carousel.jpg" class="d-block w-100" alt="...">
       </div>
-  </section>
+  </div>
 
   <!--  A PROPOS  -->
   <section class="row bg-01" id="about">   
@@ -147,7 +147,7 @@
     <h3 class="text-red-800 pb-6">Mes Réalisations</h3>
       <div class="display">
         <div class="desktop">
-          <iframe id="desktop" title="responsiv" src=""></iframe>
+          <iframe id="desktop" title="responsiv"></iframe>
        </div>
       </div>
       <div class="menuSite flex justify-center text-black">
@@ -172,20 +172,16 @@
   </footer>
 </div>    
 
-
  <!--  JS Files  -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="js_files/main.js"></script>
 <script src="js_files/responsiv.js"></script>
-  <noscript>
-    <p>Merci d'activer JavaScript afin de pouvoir bénéficier de toutes les fonctionnalités de notre site.</p>
-  </noscript>
-</body>
-</html>
-  </div>
-    <!-- JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<noscript>
+  <p>Merci d'activer JavaScript afin de pouvoir bénéficier de toutes les fonctionnalités de notre site.</p>
+</noscript>
+<!-- JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
