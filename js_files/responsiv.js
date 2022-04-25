@@ -1,46 +1,29 @@
-const url1 = "http://eleazarnabet-portfolio.herokuapp.com/"
 const url2 = "https://cristalid.fr/"
 const url3 = "https://jacekjeznach.com/"
 const url4 = "https://picsum.photos/"
 
 
-// recuperer valeur bouton appuyé
-function displayProject(btnId) {
-switch(btnId) {
-  case "site1":
-    document.getElementById("desktop").src = url1
-    document.getElementById('btn1').className = "btn btn-info"
-    document.getElementById('btn2').className = "btn btn-primary"
-    document.getElementById('btn3').className = "btn btn-primary"
-    document.getElementById('btn4').className = "btn btn-primary"
-    break;
 
-  case "site2":
-    document.getElementById("desktop").src = url2
-    document.getElementById('btn1').className = "btn btn-primary"
-    document.getElementById('btn2').className = "btn btn-info" 
-    document.getElementById('btn3').className = "btn btn-primary"
-    document.getElementById('btn4').className = "btn btn-primary"
-    break;
 
-  case "site3":
-    document.getElementById("desktop").src = url3
-    document.getElementById('btn1').className = "btn btn-primary"
-    document.getElementById('btn2').className = "btn btn-primary"
-    document.getElementById('btn3').className = "btn btn-info"
-    document.getElementById('btn4').className = "btn btn-primary"
-    break; 
 
-  case "site4":
-    document.getElementById("desktop").src = url4
-    document.getElementById("tablet").src = url4
-    document.getElementById("mobile").src = url4
-    document.getElementById("laptop").src = url4
-    document.getElementById('btn1').className = "btn btn-primary"
-    document.getElementById('btn2').className = "btn btn-primary"
-    document.getElementById('btn3').className = "btn btn-primary"
-    document.getElementById('btn4').className = "btn btn-info"
-    break;
-
-}
-}
+$("#respBtn2").click(() => {
+ console.log("site1");
+ $("#respBtn2").removeClass("btn-outline-secondary").addClass("btn-outline-primary");
+ $("#respBtn3").removeClass("btn-outline-secondary").addClass("btn-outline-secondary");
+ $("#respBtn4").removeClass("btn-outline-secondary").addClass("btn-outline-secondary");
+ $("iframe").attr("src",url2);
+})
+$("#respBtn3").click(() => {
+  console.log("site2");
+  $("#respBtn2").removeClass("btn-outline-secondary").addClass("btn-outline-secondary");
+  $("#respBtn3").removeClass("btn-outline-secondary").addClass("btn-outline-primary");
+  $("#respBtn4").removeClass("btn-outline-secondary").addClass("btn-outline-secondary");
+  $("iframe").attr("src",url3);
+ })
+ $("#respBtn4").click(() => {
+  console.log("site3");
+  $("#respBtn2").removeClass("btn-outline-secondary").addClass("btn-outline-secondary");
+  $("#respBtn3").removeClass("btn-outline-secondary").addClass("btn-outline-secondary");
+  $("#respBtn4").removeClass("btn-outline-secondary").addClass("btn-outline-primary");
+  $("iframe").attr("src",url4);
+ })

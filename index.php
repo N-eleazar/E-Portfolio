@@ -146,10 +146,10 @@
           <iframe id="desktop" title="responsiv"></iframe>
        </div>
       </div>
-      <div class="menuSite flex justify-center text-black">
-        <button type="button" id="respBtn2" class="text-black btn btn-outline-secondary" onClick="displayProject('site2')">Cristal{ID}</button>
-        <button type="button" id="respBtn3" class="text-black btn btn-outline-secondary" onClick="displayProject('site3')">Jacek jeznach</button>
-        <button type="button" id="respBtn4" class="text-black btn btn-outline-secondary" onClick="displayProject('site4')">Lorem Photos</button>
+      <div class="menuSite flex justify-center text-black pb-8">
+        <button type="button" id="respBtn2" class="text-black btn btn-outline-secondary">Cristal{ID}</button>
+        <button type="button" id="respBtn3" class="text-black btn btn-outline-secondary">Jacek jeznach</button>
+        <button type="button" id="respBtn4" class="text-black btn btn-outline-secondary">Lorem Photos</button>
       </div>
   </section>
 
