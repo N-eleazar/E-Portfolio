@@ -1,6 +1,6 @@
-$bg1-Color: wheat;
-$bg2-Color: antiquewhite;
-$bg3-Color: darken(wheat, 10%);
+$bg1_Color: wheat;
+$bg2_Color: antiquewhite;
+$bg3_Color: darken(wheat, 10%);
 
 /* latin-ext */
 @font-face {
@@ -59,10 +59,10 @@ section {
   min-height: 200px;
 }
 .bg-01 {
-  background-color: $bg1-Color;
+  background-color: $bg1_Color;
 }
 .bg-02 {
-  background-color: $bg2-Color;
+  background-color: $bg2_Color;
 }
 /* -------- A PROPOS -------- */ 
 /* -------- COMPETENCES -------- */
@@ -75,10 +75,10 @@ section {
   display: flex;
   flex-direction: column;
   border: 1px solid whitesmoke;
-  background-color: $bg3-Color;
+  background-color: $bg3_Color;
   .panel-heading {
     height: 60%;
-    h4 {
+    h4{
       font-size: 1em;
     }
   }
