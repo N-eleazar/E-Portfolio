@@ -16,16 +16,16 @@
                   <th colspan="2">Fev 15</th>
                   <th colspan="2">Mars 01</th>
                   <th colspan="2">Mars 15</th>
-                  <th colspan="2" class="table-danger">April 01</th>
+                  <th colspan="2">April 01</th>
                   <th colspan="2">April 15</th>
-                  <th colspan="2">Mai 01</th>
+                  <th colspan="2" class="table-danger">Mai 01</th>
                 </tr>
               </thead>
               <tbody>
                 <tr><td colspan="20"></td></tr>
-                <tr><td class="table-primary" colspan="4">Décrypter l'informatique et le web.</td></tr>
+                <tr><td class="table-dark table-bordered border-primary progress-bar-striped" colspan="4">Décrypter l'informatique et le web.</td></tr>
                 <tr><td colspan="04"></td>
-                 <td class="table-info"colspan="06">Découvrir la programmation.</td>
+                 <td class="table-dark table-bordered border-primary progress-bar-striped"colspan="06">Découvrir la programmation.</td>
                 </tr>
                 <tr>
                   <td colspan="10"></td>
@@ -33,13 +33,13 @@
                 </tr>
                 <tr><td colspan="20"></td></tr>
                 <tr>
-                  <td class="table-warning" colspan="20">Développement front-end</td>
+                  <td class="table-light" colspan="20"><h4>Développement front-end</h4></td>
                 </tr>
                 <tr>
-                  <td class="table-primary progress-bar-striped" colspan="2">Créer un site web avec HTML,CSS et le Frameword Bootstrap.</td>
-                  <td class="table-info progress-bar-striped" colspan="2">S'initier à la programmation avec Javascript & Python.</td>
+                  <td class="table-dark table-bordered border-primary progress-bar-striped" colspan="2">Créer un site web avec HTML,CSS et le Frameword Bootstrap.</td>
+                  <td class="table-dark table-bordered border-primary progress-bar-striped" colspan="2">S'initier à la programmation avec Javascript & Python.</td>
                   <td class="table-primary" colspan="2">Dynmiser vos sites web avec Javascript.</td>
-                  <td class="table-info" colspan="2">Utiliser Git et Github pour gérer son code source.</td>
+                  <td class="table-dark table-bordered border-primary progress-bar-striped" colspan="2">Utiliser Git et Github pour gérer son code source.</td>
                   <td class="table-primary" colspan="2">Réaliser la maquette d'une application web responsive.</td>
                   <td class="table-info" colspan="2">Créer un site web avec le CMS Wordpress.</td>
                   <td class="table-primary" colspan="2">Développer une applicaiton web avec React.js</td>  
@@ -52,7 +52,7 @@
                   <td colspan="20"></td>
                 </tr>
                 <tr>
-                  <td class="table-warning" colspan="20">Développement back-end</td>
+                  <td class="table-light" colspan="20"><h4>Développement back-end</h4></td>
                 </tr>
                 <tr>
                   <td class="table-secondary" colspan="4">Développer des sites web dynamique avec PHP.</td>
